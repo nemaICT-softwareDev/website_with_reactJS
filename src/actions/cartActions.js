@@ -19,23 +19,23 @@ export const addToCart = (items, product) => (dispatch) => {
 };
 
 export const removeFromCart = (items, product) => (dispatch) => {
-    // const cartItems = items.slice().filter((a) => a.id !== product.id);
-    const cartItems = items.slice();
-    let foundItem = false;
+
+    let cartItems = items.slice();
+    let itemFound = false;
 
     cartItems.forEach((cartItem) => {
         if (cartItem.id === product.id) {
-            cartItem.count -= 1;
-            foundItem = true;
-        }
 
-        if(cartItem.count > 0 && !foundItem){
-            cartItems.splice(cartItem,1);
-            foundItem = false;
+         cartItem.count -= 1;
+          if(cartItem.count > 0){
+                itemFound = true;
+            }
+            if(!itemFound){
+                cartItems.splice(product,1);
+                itemFound = false;
+            }
         }
     });
-
-
 
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     dispatch({

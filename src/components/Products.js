@@ -3,6 +3,7 @@ import util from '../util';
 import {connect} from 'react-redux';
 import {fetchProducts} from '../actions/productActions';
 import {addToCart, removeFromCart} from "../actions/cartActions";
+import {changeBackground} from "../actions/ChangeColor";
 
 class Products extends Component {
     componentDidMount() {
@@ -19,32 +20,35 @@ class Products extends Component {
                 <div className="col-md-4" key={product.id}>
                     <div className="thumbnail text-center">
                            <div className="form-check text-left">
-                               <input className="form-check-input" type="checkbox"  />
+                               <input className="form-check-input" type="checkbox"   />
                                <label className="form-check-label text-info checkboxLabel" >Exclude product</label>
+                               <a>
+                                   <p className="text-info text-center">{product.title}</p>
+                                   <img src={`products/${product.sku}_2.jpg`} alt={product.title} />
+                                   <p className="text-white text-center">{util.formatCurrency(product.price)}</p>
+                               </a><hr/>
                            </div>
-                        <a href={`#${product.id}`}
-                           onClick={() => this.props.addToCart(this.props.cartItems, product)}>
-                            <img src={`products/${product.sku}_2.jpg`} alt={product.title} />
-                            <p className="text-info">{product.title}</p>
-                        </a>
-                             <div className="col-col-2 ">
-                                <div className="input-group plusMinus text-right">
-                                    <button type="button" className="btn btn-info btn-number"
+
+                        <div className="btn-group btn-group-justified">
+                            <button type="button"
+                                    className="btn btn-primary btn btn-info"
+                                    onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>
+                                Add To Cart
+                            </button>
+                                <button type="button" className="btn btn-info btn-number"
                                             datatype="minus" data-field=""
                                             onClick={() =>{
-                                                this.props.removeFromCart(this.props.cartItems, product)}}>-</button>
+                                                this.props.removeFromCart(this.props.cartItems, product)}}>-
+                                </button>
                                 <button type="button" className="btn btn-info btn-number"
                                         datatype="plus" data-field=""
                                         onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>+</button>
-                                </div>
-                                 <b>{util.formatCurrency(product.price)}</b>
-                                 <button type="button"
-                                         className="btn btn-primary btn btn-info"
-                                         onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>
-                                     Add To Cart
-                                 </button>
-                                </div>
-                           </div>
+                                 </div>
+
+
+
+                             </div>
+
                     </div>
 
             )
