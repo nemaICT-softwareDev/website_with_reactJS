@@ -1,13 +1,36 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, 'Tangerine', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p.totalPrice{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+label.checkboxLabel{
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-left: 1.5em;
+  font-size: 1em;
+;
+}
+h1.title{
+  font-family: "Gill Sans Nova Cond Ultra Bold", fantasy;
+}
+h2.subTitle{
+  font-family: "Gill Sans Nova Cond Ultra Bold", fantasy;
+}
+input-group.plusMinus{
+  width: 15%;
 }
