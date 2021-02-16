@@ -3,12 +3,11 @@ import { Provider } from "react-redux";
 import Products from "./components/Products";
 import Filter from "./components/Filter";
 import Basket from "./components/Basket";
-import Footer from './components/Footer';
 import store from "./store";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/Header";
-import FooterPage from "./components/Footer";
+import Footer from "./components/Footer";
 
 
 
@@ -46,7 +45,7 @@ class App extends Component {
                     <Basket />
                 </div>
               </div>
-                <FooterPage />
+                <Footer />
             </div>
 
         </Provider>
