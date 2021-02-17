@@ -6,7 +6,7 @@ import {
 
 // Get the list of products from the json API and return it via the payload
 export const fetchProducts = () => (dispatch) => {
-    fetch("http://localhost:8000/products")
+    fetch("http://localhost:3000/products")
         .then((res) => res.json())
         .catch((err) =>
             fetch("db.json")

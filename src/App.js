@@ -8,6 +8,7 @@ import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import HLine from "./components/HLine";
 
 
 class App extends Component {
@@ -32,11 +33,11 @@ class App extends Component {
 
             <div className="container">
                 <Header />
-              <hr/>
+                <HLine />
               <div className="row">
                 <div className="col-md-8">
                     <Filter />
-
+                    <HLine />
                   <Products />
                 </div>
                 <div className="col-md-4">

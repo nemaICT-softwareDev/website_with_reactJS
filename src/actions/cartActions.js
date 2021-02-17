@@ -29,16 +29,12 @@ export const removeFromCart = (items, product) => (dispatch) => {
           if(cartItem.count > 0){
                 itemFound = true;
             }
-
             if(!itemFound){
                 //cartItems.filter(cartItem => cartItem !== product);
                   cartItems.splice(product,1);
                   itemFound = false;
             }
-        }
-    });
-
-
+        }});
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     dispatch({
         type: REMOVE_FROM_CART,

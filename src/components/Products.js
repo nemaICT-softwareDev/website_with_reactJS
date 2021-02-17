@@ -15,8 +15,7 @@ class Products extends Component {
          */
         const productItems = this.props.products.map( (product) => (
                 <div className="col-md-4" key={product.id}>
-                    <hr/>
-                    <div className="thumbnail text-center">
+                     <div className="thumbnail text-center">
                                <a>
                                    <div className="productDescription">
                                    <p className="text-info text-center">{product.title}</p>

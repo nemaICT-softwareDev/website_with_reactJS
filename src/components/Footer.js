@@ -8,11 +8,8 @@ class Footer extends React.Component {
             <MDBFooter color="blue" className="font-small pt-4 mt-4">
                 <hr/>
                 <MDBContainer fluid className="text-center text-md-left">
-
                     <MDBRow>
-
                         <MDBCol md="6">
-
                             <h5 className="title">Footer Content</h5>
                             <p>
                                 Deze website is gemaakt met ReactJS - html5 en Bootstrap
