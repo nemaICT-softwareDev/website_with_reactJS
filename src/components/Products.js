@@ -8,9 +8,6 @@ import {changeBackground} from "../actions/ChangeColor";
 class Products extends Component {
     componentDidMount() {
         this.props.fetchProducts();
-        this.state={
-            count:0
-        }
     }
     render() {
         /**
@@ -18,39 +15,40 @@ class Products extends Component {
          */
         const productItems = this.props.products.map( (product) => (
                 <div className="col-md-4" key={product.id}>
+                    <hr/>
                     <div className="thumbnail text-center">
-                           <div className="form-check text-left">
-                               <input className="form-check-input" type="checkbox"   />
-                               <label className="form-check-label text-info checkboxLabel" >Exclude product</label>
                                <a>
+                                   <div className="productDescription">
                                    <p className="text-info text-center">{product.title}</p>
+                                   </div>
                                    <img src={`products/${product.sku}_2.jpg`} alt={product.title} />
-                                   <p className="text-white text-center">{util.formatCurrency(product.price)}</p>
+                                   <div className="displayPrice">
+                                   <p className="text-white text-center "><span className="glyphicon glyphicon-euro"/>
+                                   &nbsp;{util.formatCurrency(product.price)}</p>
+                                   </div>
                                </a><hr/>
-                           </div>
-
                         <div className="btn-group btn-group-justified">
                             <button type="button"
                                     className="btn btn-primary btn btn-info"
-                                    onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>
-                                Add To Cart
+                                    onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>Add to&nbsp;
+                               <span
+                                   className="glyphicon glyphicon-shopping-cart"></span>
                             </button>
                                 <button type="button" className="btn btn-info btn-number"
                                             datatype="minus" data-field=""
                                             onClick={() =>{
-                                                this.props.removeFromCart(this.props.cartItems, product)}}>-
+                                                this.props.removeFromCart(this.props.cartItems, product)}}><span
+                                    className="glyphicon glyphicon-minus"></span>
                                 </button>
                                 <button type="button" className="btn btn-info btn-number"
                                         datatype="plus" data-field=""
-                                        onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>+</button>
+                                        onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>
+                                    <span
+                                        className="glyphicon glyphicon-plus"></span>
+                                </button>
                                  </div>
-
-
-
                              </div>
-
                     </div>
-
             )
         )
         return (

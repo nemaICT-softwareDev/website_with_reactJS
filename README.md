@@ -1,6 +1,6 @@
 
 
-                    Individueel opdracht BoodschapApp
+                    Individuel opdracht BoodschapApp
 
 Run Server
 npm install -g json-server

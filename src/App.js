@@ -10,10 +10,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 
-
-
 class App extends Component {
-    componentWillMount() {
+    componentDidMount() {
         /**
          * Here we fetch the json API server to get the list of products
          * Check if is there any file in the localStore from previous session to be loaded in the choppingCart
@@ -26,19 +24,19 @@ class App extends Component {
     return (
         /**
          * The <Provider /> makes the Redux store available to any nested components that have
-         * been wrapped in the connect() function.
-         Since any React component in a React Redux app can be connected, most applications
-         will render a <Provider> at the top level, with the entire app’s component tree inside of it.
-         Normally, you can’t use a connected component unless it is nested inside of a <Provider>.
+         * been wrapped in the connect() function. Since any React component in a React Redux app can be connected,
+         * most applications will render a <Provider> at the top level, with the entire app’s component tree inside of it.
+         * Normally, you can’t use a connected component unless it is nested inside of a <Provider>.
          */
         <Provider store={store}>
+
             <div className="container">
                 <Header />
               <hr/>
               <div className="row">
                 <div className="col-md-8">
                     <Filter />
-                     <hr/>
+
                   <Products />
                 </div>
                 <div className="col-md-4">

@@ -1,4 +1,6 @@
-
-export const changeBackground = e => {
-    e.target.style.background = 'red';
-};
+//
+// export const changeBackground(value) {
+//     let itemChecked = this.state.itemChecked;
+//     itemChecked(value)
+//     e.target.style.background = 'red';
+// };

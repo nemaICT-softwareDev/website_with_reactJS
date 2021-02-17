@@ -25,17 +25,19 @@ export const removeFromCart = (items, product) => (dispatch) => {
 
     cartItems.forEach((cartItem) => {
         if (cartItem.id === product.id) {
-
          cartItem.count -= 1;
           if(cartItem.count > 0){
                 itemFound = true;
             }
+
             if(!itemFound){
-                cartItems.splice(product,1);
-                itemFound = false;
+                //cartItems.filter(cartItem => cartItem !== product);
+                  cartItems.splice(product,1);
+                  itemFound = false;
             }
         }
     });
+
 
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     dispatch({

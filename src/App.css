@@ -36,4 +36,39 @@
     transform: rotate(360deg);
   }
 }
+p.totalPrice{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h1.title{
+  font-family: "Gill Sans Nova Cond Ultra Bold", "Algerian";
+}
+h2.subTitle{
+  font-family: "Gill Sans Nova Cond Ultra Bold", "Font Awesome\ 5 Free";
+}
+ul.dotFree{
+  list-style-type: none;
+  padding-left: 0%;
+
+}
+label.titleProduct{
+  padding-left: 5%;
+}
+div.welcomeMsgBasket{
+  font-size: 1.25em;
+}
+div.infoBasket{
+  font-size: 1.25em;
+}
+div.productDescription{
+  font-size: 1.2em;
+}
+div.displayPrice{
+padding-top: 10%;
+  font-family: "Apple Color Emoji", "Font Awesome\ 5 Free";
+  font-size: 1.2em;
+}
+
+
 

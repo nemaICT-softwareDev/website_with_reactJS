@@ -13,24 +13,3 @@ code {
     monospace;
 }
 
-p.totalPrice{
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-label.checkboxLabel{
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  margin-left: 1.5em;
-  font-size: 1em;
-;
-}
-h1.title{
-  font-family: "Gill Sans Nova Cond Ultra Bold", fantasy;
-}
-h2.subTitle{
-  font-family: "Gill Sans Nova Cond Ultra Bold", fantasy;
-}
-input-group.plusMinus{
-  width: 15%;
-}
