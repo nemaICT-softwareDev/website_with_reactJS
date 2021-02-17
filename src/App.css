@@ -81,7 +81,9 @@ padding-top: 10%;
   filter: alpha(opacity=40); /* msie */
   background-color: black;
 }
-
+MDBCol.links{
+  padding-right: 0;
+}
 
 
 

@@ -7,10 +7,10 @@ import { addToCart, removeFromCart } from "../actions/cartActions";
 class Basket extends Component {
     render() {
         const {cartItems} = this.props;
-     return (
+         return (
             <div className="alert alert-info">
-                { cartItems.length === 0 ?
-                <div className="welcomeMsgBasket">Empty Shopping <span className="glyphicon glyphicon-shopping-cart basket"/></div>:
+                { !cartItems.length ?
+                <div className="welcomeMsgBasket">Empty Shopping <span className="glyphicon glyphicon-shopping-cart basket"/></div> :
                 <div className="infoBasket">
                     You have {cartItems.length} products in your shopping&nbsp;
                     <span className="glyphicon glyphicon-shopping-cart basket"/><hr/>
@@ -21,11 +21,11 @@ class Basket extends Component {
                         {cartItems.map((item) => (
                             <li key={item.id}>
                                 <div className="form-check">
-                                <input className="form-check-input basketCheckBox" type="checkbox" id="basketCheckBox"
-                                 name="products[]"/>
-                                <label className="labelProductTitle" htmlFor="basketCheckBox">&nbsp;{item.title}</label>
+                                    <input className="form-check-input basketCheckBox" type="checkbox" id="basketCheckBox"
+                                     />
+                                    <label className="labelProductTitle" htmlFor="basketCheckBox">&nbsp;{item.title}</label>
                                     <span className="pull-right">
-                                        {item.count} X {util.formatCurrency(item.price)}
+                                         {item.count} X {util.formatCurrency(item.price)}
                                     </span>
                                 </div>
                             </li>

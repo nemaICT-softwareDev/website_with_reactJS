@@ -10,13 +10,10 @@ class Footer extends React.Component {
                 <MDBContainer fluid className="text-center text-md-left">
                     <MDBRow>
                         <MDBCol md="6">
-                            <h5 className="title">Footer Content</h5>
-                            <p>
-                                Deze website is gemaakt met ReactJS - html5 en Bootstrap
-                            </p>
+                            <h5 className="title">Deze website is gemaakt met ReactJS - html5 en Bootstrap</h5>
                         </MDBCol>
-                        <MDBCol md="4" className="text-left">
-                            <h5 className="title">Links</h5>
+                        <MDBCol md="4" >
+                            <h5 className="title">Interessante Links</h5>
                             <ul>
                                 <li className="list-unstyled">
                                     <a href="https://reactjs.org/docs/introducing-jsx.html">React</a>
