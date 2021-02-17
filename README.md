@@ -1,10 +1,12 @@
 # Individuele opdracht BoodschapApp
 
-### !! Important, start the server to avoid error message !!
+### !! Important, install json server and run it to avoid error message on browser inspector!!
 
-1) first go to the root map -  **cd boodschap_app**
-2) run **npm install -g json-server**
-3) run: **npm json-server public/db.json --port 8000**
-4) In a new terminal execute **npm start**
+1) go to terminal 
+2) run:   **cd boodschap_app**
+3) run:  **npm install -g json-server**
+4) run: **npm json-server public/db.json --port 8000**
+5) check   http://localhost:8000
+6) In a new terminal execute **npm start**
 
-Open http://localhost:3000 to view it in the browser.
+Open http://localhost:3000 to view app in the browser.

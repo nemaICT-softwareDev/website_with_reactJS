@@ -52,7 +52,7 @@ ul.dotFree{
   padding-left: 0%;
 
 }
-label.titleProduct{
+label.labelProductTitle{
   padding-left: 5%;
 }
 div.welcomeMsgBasket{
@@ -69,6 +69,19 @@ padding-top: 10%;
   font-family: "Apple Color Emoji", "Font Awesome\ 5 Free";
   font-size: 1.2em;
 }
+.basketCheckBox:checked + .labelProductTitle{
+  /*text-decoration: line-through;*/
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* msie */
+  background-color: grey;
+}
+.basketCheckBox:default + .labelProductTitle{
+  text-decoration: line-through;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* msie */
+  background-color: black;
+}
+
 
 
 

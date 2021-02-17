@@ -21,9 +21,9 @@ class Basket extends Component {
                         {cartItems.map((item) => (
                             <li key={item.id}>
                                 <div className="form-check">
-                                <input className="form-check-input" type="checkbox" id="myCheck"
+                                <input className="form-check-input basketCheckBox" type="checkbox" id="basketCheckBox"
                                   />
-                                <label className="titleProduct" htmlFor="myCheck">&nbsp;{item.title}</label>
+                                <label className="labelProductTitle" htmlFor="basketCheckBox">&nbsp;{item.title}</label>
                                     <span className="pull-right">
                                         {item.count} X {util.formatCurrency(item.price)}
                                     </span>
