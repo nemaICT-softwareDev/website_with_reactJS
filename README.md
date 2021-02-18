@@ -1,6 +1,7 @@
-# Individuele opdracht BoodschapApp
+### Deze eerste opdracht was om individueel een boodschappenapplicatie te maken,genaamd BoodschApp. Hier heb ik React, html5, CSS3 en Bootstrap gebruikt.
 
-### !! Important, first install json server and run it to avoid delay loading pictures and error message on browser inspector!!
+#### !! Belangrijk, installeer eerst de json-server en voer het uit om vertraging bij het laden van afbeeldingen en foutmeldingen in de browserinspecteur te voorkomen!!
+
 
 1) go to terminal 
 2) run:   **cd boodschap_app**

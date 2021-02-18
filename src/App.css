@@ -47,24 +47,17 @@ h1.title{
 h2.subTitle{
   font-family: "Gill Sans Nova Cond Ultra Bold", "Font Awesome\ 5 Free", "fantasy";
 }
-ul.dotFree{
-  list-style-type: none;
+ul.dotFreeList{
   padding-left: 0%;
-
 }
 
-div.welcomeMsgBasket{
+.welcomeMsgBasket, .infoBasket, .productDescription{
   font-size: 1.25em;
 }
-div.infoBasket{
-  font-size: 1.25em;
-}
-div.productDescription{
-  font-size: 1.2em;
-}
+
 div.displayPrice{
-padding-top: 10%;
-  font-family: "Apple Color Emoji", "Font Awesome\ 5 Free";
+  padding-top: 10%;
+  font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
   font-size: 1.2em;
 }
 
@@ -75,8 +68,8 @@ padding-top: 10%;
 .productTitle:checked + .productTitle{
   text-decoration: line-through;
   text-decoration-color: black;
-  opacity: 0.4;
-  filter: alpha(opacity=40); /* msie */
+  opacity: 0.6;
+  /*filter: alpha(opacity=60); /* msie */
   background-color: grey;
 
 }
@@ -86,8 +79,11 @@ padding-top: 10%;
   filter: alpha(opacity=40); /* msie */
   background-color: black;
 }
-MDBCol.links{
-  padding-right: 0;
+.descriptionFooter, .descriptionLinks, .descriptionQuote{
+  font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
 }
 
 

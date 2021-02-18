@@ -7,20 +7,19 @@ import { addToCart, removeFromCart } from "../actions/cartActions";
 class Basket extends Component {
     render() {
         const {cartItems} = this.props;
-        let itemCount = 0;
          return (
             <div className="alert alert-info">
                 { !cartItems.length?
-                <div className="welcomeMsgBasket">Empty Shopping <span className="glyphicon glyphicon-shopping-cart basket"/></div>:
+                <div className="welcomeMsgBasket">Your <span className="glyphicon glyphicon-shopping-cart basket"/>&nbsp; is empty</div>:
                 <div className="infoBasket">
-                    You have {cartItems.length} products in your shopping&nbsp;
+                    Lucky bird! you have {cartItems.length}{cartItems.length === 1? " product":" products"} in your&nbsp;
                     <span className="glyphicon glyphicon-shopping-cart basket"/><hr/>
                 </div>}
                 {cartItems.length > 0 &&
                 <div>
-                    <ul className="dotFree">
+                    <ul className="dotFreeList">
                         {cartItems.map((item) => (
-                            <li key={item.id}  >
+                            <li key={item.id}  className="list-unstyled">
                                 <div className="form-check">
                                     <input className="form-check-input productTitle" type="checkbox" id="productTitleCkbx"/>
                                     <label className="productTitle" htmlFor="productTitleCkbx">&nbsp;{item.title}</label>
