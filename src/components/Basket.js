@@ -7,10 +7,11 @@ import { addToCart, removeFromCart } from "../actions/cartActions";
 class Basket extends Component {
     render() {
         const {cartItems} = this.props;
+        let itemCount = 0;
          return (
             <div className="alert alert-info">
-                { !cartItems.length ?
-                <div className="welcomeMsgBasket">Empty Shopping <span className="glyphicon glyphicon-shopping-cart basket"/></div> :
+                { !cartItems.length?
+                <div className="welcomeMsgBasket">Empty Shopping <span className="glyphicon glyphicon-shopping-cart basket"/></div>:
                 <div className="infoBasket">
                     You have {cartItems.length} products in your shopping&nbsp;
                     <span className="glyphicon glyphicon-shopping-cart basket"/><hr/>
@@ -19,17 +20,15 @@ class Basket extends Component {
                 <div>
                     <ul className="dotFree">
                         {cartItems.map((item) => (
-                            <li key={item.id}>
+                            <li key={item.id}  >
                                 <div className="form-check">
-                                    <input className="form-check-input basketCheckBox" type="checkbox" id="basketCheckBox"
-                                     />
-                                    <label className="labelProductTitle" htmlFor="basketCheckBox">&nbsp;{item.title}</label>
+                                    <input className="form-check-input productTitle" type="checkbox" id="productTitleCkbx"/>
+                                    <label className="productTitle" htmlFor="productTitleCkbx">&nbsp;{item.title}</label>
                                     <span className="pull-right">
-                                         {item.count} X {util.formatCurrency(item.price)}
+                                        <b>{item.count} X {util.formatCurrency(item.price)}</b>
                                     </span>
                                 </div>
                             </li>
-
                         ))}
                     </ul>
                     <hr />
@@ -38,7 +37,8 @@ class Basket extends Component {
                             cartItems.reduce((a,c) => a + c.price * c.count, 0)
                         )}</p>
                           <button className="btn btn-primary btn-info" onClick={( ) =>
-                              alert("Checkout still needs to be implemented, not in the scope of this POC...")}>
+                              alert("Deze knop is niet geïmplementeerd omdat deze niet binnen het scope van dit project valt, " +
+                                  "de aanwezigheid van deze knop hier is slechts figuurlijk.")}>
                             Checkout
                         </button>
                     </div>

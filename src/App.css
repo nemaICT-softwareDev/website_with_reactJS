@@ -42,19 +42,17 @@ p.totalPrice{
 }
 
 h1.title{
-  font-family: "Gill Sans Nova Cond Ultra Bold", "Algerian";
+  font-family: "Gill Sans Nova Cond Ultra Bold", "Algerian", "serif";
 }
 h2.subTitle{
-  font-family: "Gill Sans Nova Cond Ultra Bold", "Font Awesome\ 5 Free";
+  font-family: "Gill Sans Nova Cond Ultra Bold", "Font Awesome\ 5 Free", "fantasy";
 }
 ul.dotFree{
   list-style-type: none;
   padding-left: 0%;
 
 }
-label.labelProductTitle{
-  padding-left: 5%;
-}
+
 div.welcomeMsgBasket{
   font-size: 1.25em;
 }
@@ -69,13 +67,20 @@ padding-top: 10%;
   font-family: "Apple Color Emoji", "Font Awesome\ 5 Free";
   font-size: 1.2em;
 }
-.basketCheckBox:checked + .labelProductTitle{
-  /*text-decoration: line-through;*/
+
+.productTitle{
+  padding-left: 5%;
+}
+
+.productTitle:checked + .productTitle{
+  text-decoration: line-through;
+  text-decoration-color: black;
   opacity: 0.4;
   filter: alpha(opacity=40); /* msie */
   background-color: grey;
+
 }
-.basketCheckBox:default + .labelProductTitle{
+.productTitle:default + .productTitle{
   text-decoration: line-through;
   opacity: 0.4;
   filter: alpha(opacity=40); /* msie */
