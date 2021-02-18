@@ -5,7 +5,7 @@
       "sku": 3700512960720,
       "title": "What an Eikel",
       "description": "Sphynx Tie Dye Grey",
-      "availableSizes": ["X", "L", "XL", "XXL"],
+      "availableSizes": ["S","X", "XXL"],
       "price": 10,
       "isFreeShipping": true
     },
@@ -35,7 +35,7 @@
       "sku": 3699126960720,
       "title": "Lost my heart somewhere",
       "description": "Born On The Streets",
-      "availableSizes": ["XL"],
+      "availableSizes": ["XXL"],
       "price": 25.9,
       "isFreeShipping": false
     },
@@ -45,7 +45,7 @@
       "sku": 3550733960720,
       "title": "Dreaming of you",
       "description": "Tso 3D Short Sleeve",
-      "availableSizes": ["X", "L", "XL"],
+      "availableSizes": ["L", "XL"],
       "price": 10.9,
       "isFreeShipping": false
     },
