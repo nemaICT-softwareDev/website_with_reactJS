@@ -20,7 +20,7 @@ class Basket extends Component {
                     <ul className="dotFreeList">
                         {cartItems.map((item) => (
                             <li key={item.id}  className="list-unstyled">
-                                <div className="form-check">
+                                <div className="form-check" >
                                     <input className="form-check-input productTitle" type="checkbox" id="productTitleCkbx"/>
                                     <label className="productTitle" htmlFor="productTitleCkbx">&nbsp;{item.title}</label>
                                     <span className="pull-right">

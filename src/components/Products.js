@@ -15,15 +15,17 @@ class Products extends Component {
          */
         const productItems = this.props.products.map( (product) => (
                 <div className="col-md-4" key={product.id}>
-                     <div className="thumbnail text-center">
+                     <div className="thumbnail">
                                <a>
                                    <div className="productDescription">
-                                   <p className="text-info text-center">{product.title}</p>
+                                        <p className="text-info text-center">{product.title}</p>
                                    </div>
+
                                    <img src={`products/${product.sku}_2.jpg`} alt={product.title} />
+
                                    <div className="displayPrice">
-                                   <p className="text-white text-center "><span className="glyphicon glyphicon-euro"/>
-                                   &nbsp;{util.formatCurrency(product.price)}</p>
+                                         <p className="text-white text-center "><span className="glyphicon glyphicon-euro"/>
+                                             &nbsp;{util.formatCurrency(product.price)}</p>
                                    </div>
                                </a><hr/>
                         <div className="btn-group btn-group-justified">

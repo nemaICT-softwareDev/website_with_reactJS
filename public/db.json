@@ -2,8 +2,8 @@
   "products": [
     {
       "id": 1,
-      "sku": 1621554960720,
-      "title": "Sphynx Tie Dye Grey T-Shirt",
+      "sku": 3700512960720,
+      "title": "What an Eikel",
       "description": "Sphynx Tie Dye Grey",
       "availableSizes": ["X", "L", "XL", "XXL"],
       "price": 10,
@@ -13,7 +13,7 @@
     {
       "id": 2,
       "sku": 1496075960720,
-      "title": "Danger Knife Grey T-Shirt",
+      "title": "Untill the bitter end",
       "description": "Danger Knife Grey",
       "availableSizes": ["X", "M", "L"],
       "price": 14.9,
@@ -22,8 +22,8 @@
 
     {
       "id": 3,
-      "sku": 1698730960720,
-      "title": "White DGK Script Tee",
+      "sku": 5543778960720,
+      "title": "Sometimes brings U to deep sleep",
       "description": "White DGK Script",
       "availableSizes": ["X", "M", "L"],
       "price": 14.9,
@@ -33,7 +33,7 @@
     {
       "id": 4,
       "sku": 3699126960720,
-      "title": "Born On The Streets  T-Shirt",
+      "title": "Lost my heart somewhere",
       "description": "Born On The Streets",
       "availableSizes": ["XL"],
       "price": 25.9,
@@ -43,7 +43,7 @@
     {
       "id": 5,
       "sku": 3550733960720,
-      "title": "Tso 3D Short Sleeve T-Shirt A",
+      "title": "Dreaming of you",
       "description": "Tso 3D Short Sleeve",
       "availableSizes": ["X", "L", "XL"],
       "price": 10.9,
@@ -53,7 +53,7 @@
     {
       "id": 6,
       "sku": 2277960720,
-      "title": "Man Tie Dye Cinza Grey T-Shirt",
+      "title": "The forbidden taste",
       "description": "Man Tie Dye Cinza Grey",
       "availableSizes": ["XL", "XXL"],
       "price": 49.9,
@@ -62,8 +62,8 @@
 
     {
       "id": 7,
-      "sku": 196800960720,
-      "title": "Crazy Monkey Black T-Shirt",
+      "sku": 3467373960720,
+      "title": "Greene the grapes",
       "description": "1977 Infantil",
       "availableSizes": ["S"],
       "style": "Preto com listras brancas",
@@ -73,8 +73,8 @@
 
     {
       "id": 8,
-      "sku": 690072960720,
-      "title": "Tso 3D Black T-Shirt",
+      "sku": 864627960720,
+      "title": "Grandma is coming!!",
       "description": "",
       "availableSizes": ["XL"],
       "style": "Azul escuro",
@@ -83,8 +83,8 @@
     },
     {
       "id": 9,
-      "sku": 2715711960720,
-      "title": "Crazy Monkey Grey",
+      "sku": 1789664960720,
+      "title": "What a party!",
       "description": "",
       "availableSizes": ["L", "XL"],
       "price": 134.9,

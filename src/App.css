@@ -48,7 +48,7 @@ h2.subTitle{
   font-family: "Gill Sans Nova Cond Ultra Bold", "Font Awesome\ 5 Free", "fantasy";
 }
 ul.dotFreeList{
-  padding-left: 0%;
+  padding-left: 0;
 }
 
 .welcomeMsgBasket, .infoBasket, .productDescription{
@@ -56,7 +56,7 @@ ul.dotFreeList{
 }
 
 div.displayPrice{
-  padding-top: 10%;
+  padding-top: 3%;
   font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
   font-size: 1.2em;
 }
