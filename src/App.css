@@ -43,9 +43,11 @@ p.totalPrice{
 
 h1.title{
   font-family: "Gill Sans Nova Cond Ultra Bold", "Algerian", "serif";
+  color: white;
 }
 h2.subTitle{
   font-family: "Gill Sans Nova Cond Ultra Bold", "Font Awesome\ 5 Free", "fantasy";
+  color: white;
 }
 ul.dotFreeList{
   padding-left: 0;
@@ -86,5 +88,13 @@ div.displayPrice{
   font-weight: bold;
 }
 
+.header{
+  margin-top: 3em;
+  background-image: url("./bckGrnImg/3698073960720.jpg");
+  /*background-position: 95% 85%, 50% 50%;*/
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 0;
+}
 
 
