@@ -36,31 +36,38 @@
     transform: rotate(360deg);
   }
 }
-p.totalPrice{
-  font-size: 1.5em;
-  font-weight: bold;
-}
 
 h1.title{
   font-family: "Gill Sans Nova Cond Ultra Bold", "Algerian", "serif";
   color: white;
 }
-h2.subTitle{
+.subTitle{
   font-family: "Gill Sans Nova Cond Ultra Bold", "Font Awesome\ 5 Free", "fantasy";
   color: white;
 }
-ul.dotFreeList{
+
+.pDescription{
+  font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
+  /*font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;*/
+  font-size: 1.5em;
+  margin-bottom: 2%;
+  text-decoration-color: #000000;
+  text-align: center;
+  text-shadow:  0 1px 0 #777, 0 -1px 0 #000;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+}
+
+.dotFreeList{
   padding-left: 0;
 }
 
-.welcomeMsgBasket, .infoBasket, .productDescription{
+.welcomeMsgBasket, .infoBasket{
   font-size: 1.25em;
 }
-
-div.displayPrice{
-  padding-top: 3%;
-  font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
-  font-size: 1.2em;
+.userBasketInfo, .basketEmptyMsg{
+  padding-top: 6px;
+  margin-left: 4%;
 }
 
 .productTitle{
@@ -87,14 +94,67 @@ div.displayPrice{
   font-style: italic;
   font-weight: bold;
 }
-
+.totalPrice{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 0.6em;
+}
+.priceXProduct{
+  margin-right: 0.9em;
+}
 .header{
   margin-top: 3em;
   background-image: url("./bckGrnImg/3698073960720.jpg");
-  /*background-position: 95% 85%, 50% 50%;*/
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  /*z-index: 0;*/
+  /*opacity: 0.9;*/
+}
+.footer{
+
+  background-image: url("./bckGrnImg/3689760960720.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
   z-index: 0;
+  margin-bottom: 3em;
+  color: #ffffff;
+}
+.links{
+  color: #ffffff;
 }
 
+.btn{
+  background-color: #46421f;
+}
+.pPrice{
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 6%;
+  color: black;
+  text-shadow: -4px 3px 3px #BBB;
 
+
+}
+.thumbnail{
+  background-color: #efddd4;
+  border-color: #745607;
+  box-shadow: 4px 4px 3px #666;
+}
+.cart{
+  background-color: #efddd4;
+  border: 1px solid #745607;
+  box-shadow: 3px 4px 3px #666;
+}
+.btn {
+   background-color: #938c64;
+}
+.btn-outline-primary{
+  background-color: #8e7f5d;
+  border-color: #8e7f5d;
+}

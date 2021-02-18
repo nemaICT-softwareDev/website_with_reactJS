@@ -8,12 +8,12 @@ class Basket extends Component {
     render() {
         const {cartItems} = this.props;
          return (
-            <div className="alert alert-info">
+            <div className="cart">
                 { !cartItems.length?
-                <div className="welcomeMsgBasket">Your <span className="glyphicon glyphicon-shopping-cart basket"/>&nbsp; is empty</div>:
+                <div className="welcomeMsgBasket"><p className={"basketEmptyMsg"}>Your <span className="glyphicon glyphicon-shopping-cart basket"/>&nbsp; is empty</p></div>:
                 <div className="infoBasket">
-                    Lucky bird! you have {cartItems.length}{cartItems.length === 1? " product":" products"} in your&nbsp;
-                    <span className="glyphicon glyphicon-shopping-cart basket"/><hr/>
+                    <p className={"userBasketInfo"}>Lucky bird! you have {cartItems.length}{cartItems.length === 1? " product":" products"} in your&nbsp;
+                        <span className="glyphicon glyphicon-shopping-cart basket"/></p><hr/>
                 </div>}
                 {cartItems.length > 0 &&
                 <div>
@@ -24,7 +24,7 @@ class Basket extends Component {
                                     <input className="form-check-input productTitle" type="checkbox" id="productTitleCkbx"/>
                                     <label className="productTitle" htmlFor="productTitleCkbx">&nbsp;{item.title}</label>
                                     <span className="pull-right">
-                                        <b>{item.count} X {util.formatCurrency(item.price)}</b>
+                                        <b className={"priceXProduct"}>{item.count} X {util.formatCurrency(item.price)}</b>
                                     </span>
                                 </div>
                             </li>
@@ -35,7 +35,7 @@ class Basket extends Component {
                         <p className="totalPrice"><span className="glyphicon glyphicon-euro"/> {util.formatCurrency(
                             cartItems.reduce((a,c) => a + c.price * c.count, 0)
                         )}</p>
-                          <button className="btn btn-primary btn-info" onClick={( ) =>
+                          <button className="btn btn-outline-primary" onClick={( ) =>
                               alert("Deze knop is niet geïmplementeerd omdat deze niet binnen het scope van dit project valt, " +
                                   "de aanwezigheid van deze knop hier is slechts figuurlijk.")}>
                             Checkout
@@ -46,7 +46,7 @@ class Basket extends Component {
             </div>
         );
     }
-}
+};
 const mapStateToProps = (state) =>({
     cartItems: state.cart.items,
 });

@@ -17,31 +17,31 @@ class Products extends Component {
                 <div className="col-md-4" key={product.id}>
                      <div className="thumbnail">
                                <a>
-                                   <div className="productDescription">
-                                        <p className="text-info text-center">{product.title}</p>
+                                   <div>
+                                        <p className="pDescription">{product.title}</p>
                                    </div>
-
-                                   <img src={`products/${product.sku}_2.jpg`} alt={product.title} />
-
-                                   <div className="displayPrice">
-                                         <p className="text-white text-center "><span className="glyphicon glyphicon-euro"/>
-                                             &nbsp;{util.formatCurrency(product.price)}</p>
+                                   <img src={`products/${product.sku}_2.jpg`} alt={product.title} title={product.description}/>
+                                   <div className={"pPrice"}>
+                                         <p>
+                                             <span className="glyphicon glyphicon-euro"/>
+                                             &nbsp;{util.formatCurrency(product.price)}
+                                         </p>
                                    </div>
                                </a><hr/>
-                        <div className="btn-group btn-group-justified">
+                        <div className="btn-group btn-group-justified ">
                             <button type="button"
-                                    className="btn btn-primary btn btn-info"
+                                    className="btn btn-outline-primary"
                                     onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>Add to&nbsp;
                                <span
                                    className="glyphicon glyphicon-shopping-cart"></span>
                             </button>
-                                <button type="button" className="btn btn-info btn-number"
+                                <button type="button" className="btn btn-outline-primary"
                                             datatype="minus" data-field=""
                                             onClick={() =>{
                                                 this.props.removeFromCart(this.props.cartItems, product)}}><span
                                     className="glyphicon glyphicon-minus"></span>
                                 </button>
-                                <button type="button" className="btn btn-info btn-number"
+                                <button type="button" className="btn btn-outline-primary"
                                         datatype="plus" data-field=""
                                         onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>
                                     <span

@@ -3,10 +3,10 @@
     {
       "id": 1,
       "sku": 3700512960720,
-      "title": "What an Eikel",
-      "description": "Sphynx Tie Dye Grey",
+      "title": "What an Eikel(oaknut)",
+      "description": "As an insult the most literal English translation for eikel would be 'dickhead, The word acorn (earlier akerne, and acharn) is related to the Gothic name akran, which had the sense of \"fruit of the unenclosed land\".",
       "availableSizes": ["S","X", "XXL"],
-      "price": 10,
+      "price": 15.7,
       "isFreeShipping": true
     },
 
@@ -14,7 +14,7 @@
       "id": 2,
       "sku": 1496075960720,
       "title": "Untill the bitter end",
-      "description": "Danger Knife Grey",
+      "description": "Juice and bitter, Delicious!",
       "availableSizes": ["X", "M", "L"],
       "price": 14.9,
       "isFreeShipping": true
@@ -23,18 +23,18 @@
     {
       "id": 3,
       "sku": 5543778960720,
-      "title": "Sometimes brings U to deep sleep",
-      "description": "White DGK Script",
+      "title": "Rounded beauty",
+      "description": "Apples have religious and mythological significance in many cultures",
       "availableSizes": ["X", "M", "L"],
-      "price": 14.9,
+      "price": 17.9,
       "isFreeShipping": true
     },
 
     {
       "id": 4,
       "sku": 3699126960720,
-      "title": "Lost my heart somewhere",
-      "description": "Born On The Streets",
+      "title": "Physalis ixocarpa",
+      "description": "Mexican Fruit",
       "availableSizes": ["XXL"],
       "price": 25.9,
       "isFreeShipping": false
@@ -43,10 +43,10 @@
     {
       "id": 5,
       "sku": 3550733960720,
-      "title": "Dreaming of you",
-      "description": "Tso 3D Short Sleeve",
+      "title": "Morning has broken",
+      "description": "A grape is a fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis",
       "availableSizes": ["L", "XL"],
-      "price": 10.9,
+      "price": 10.8,
       "isFreeShipping": false
     },
 
@@ -54,9 +54,9 @@
       "id": 6,
       "sku": 2277960720,
       "title": "The forbidden taste",
-      "description": "Man Tie Dye Cinza Grey",
+      "description": "The blackberry is an edible fruit produced by many species in the genus Rubus in the family Rosaceae, hybrids among these species within the subgenus Rubus, and hybrids between the subgenera Rubus and Idaeobatus",
       "availableSizes": ["XL", "XXL"],
-      "price": 49.9,
+      "price": 54.50,
       "isFreeShipping": false
     },
 
@@ -64,10 +64,9 @@
       "id": 7,
       "sku": 3467373960720,
       "title": "Greene the grapes",
-      "description": "1977 Infantil",
+      "description": "The main antioxidant subtance in green grape is known as resveratrol. Green grapes contains more antioxidants and chlorophyll more that other variants of grape",
       "availableSizes": ["S"],
-      "style": "Preto com listras brancas",
-      "price": 22.5,
+      "price": 31.5,
       "isFreeShipping": true
     },
 
@@ -75,9 +74,8 @@
       "id": 8,
       "sku": 864627960720,
       "title": "Grandma is coming!!",
-      "description": "",
+      "description": "A lovely book that has a clock built in, enabling children to learn to tell the time whilst reading",
       "availableSizes": ["XL"],
-      "style": "Azul escuro",
       "price": 18.7,
       "isFreeShipping": false
     },
@@ -85,9 +83,9 @@
       "id": 9,
       "sku": 1789664960720,
       "title": "What a party!",
-      "description": "",
+      "description": "Easy, versatile fruit salads are refreshing additions to any meal",
       "availableSizes": ["L", "XL"],
-      "price": 134.9,
+      "price": 132.9,
       "isFreeShipping": true
     }
   ]
