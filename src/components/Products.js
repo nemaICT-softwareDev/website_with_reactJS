@@ -18,9 +18,9 @@ class Products extends Component {
                      <div className="thumbnail">
                                <a>
                                    <div>
-                                        <p className="pDescription">{product.title}</p>
+                                        <p className="prodDescription">{product.title}</p>
                                    </div>
-                                   <img src={`products/${product.sku}_2.jpg`} alt={product.title} title={product.description}/>
+                                   <img src={`products/${product.sku}.jpg`} alt={product.title} title={product.description}/>
                                    <div className={"pPrice"}>
                                          <p>
                                              <span className="glyphicon glyphicon-euro"/>
@@ -30,18 +30,18 @@ class Products extends Component {
                                </a><hr/>
                         <div className="btn-group btn-group-justified ">
                             <button type="button"
-                                    className="btn btn-outline-primary"
+                                    className="btn btn-outline-dark"
                                     onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>Add to&nbsp;
                                <span
                                    className="glyphicon glyphicon-shopping-cart"></span>
                             </button>
-                                <button type="button" className="btn btn-outline-primary"
+                                <button type="button" className="btn btn-outline-dark"
                                             datatype="minus" data-field=""
                                             onClick={() =>{
                                                 this.props.removeFromCart(this.props.cartItems, product)}}><span
                                     className="glyphicon glyphicon-minus"></span>
                                 </button>
-                                <button type="button" className="btn btn-outline-primary"
+                                <button type="button" className="btn btn-outline-dark"
                                         datatype="plus" data-field=""
                                         onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>
                                     <span

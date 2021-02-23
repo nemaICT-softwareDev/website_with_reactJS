@@ -1,7 +1,7 @@
 import {
-        FETCH_PRODUCTS,
-        FILTER_PRODUCTS_BY_SIZE,
-        ORDER_PRODUCTS_BY_PRICE,
+    FETCH_PRODUCTS,
+    FILTER_PRODUCTS_BY_SIZE,
+    ORDER_PRODUCTS_BY_PRICE,
 } from "./types";
 
 // Get the list of products from the json API and return it via the payload
@@ -33,15 +33,12 @@ export const sortProducts = (items, sort) => (dispatch) => {
    const products = items.slice();
     if(sort !== ''){
         products.sort(
-            (a,b) => (sort ==='asc')?
+            (a,b) => (sort ==='asc') ? a.price - b.price : b.price - a.price)
                 // (a.price > b.price ? 1: -1):
-                // (a.price < b.price ? 1 : -1))
-                 a.price - b.price: b.price - a.price)
-
     }else{
         products.sort(
             (a,b) =>
-                (a.id > b.id ? 1 : -1));
+                (a.id > b.id ? 1 : -1));//display product by id asc
                 // a.id > b.id);
     }
       dispatch({

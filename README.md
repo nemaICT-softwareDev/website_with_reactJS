@@ -1,4 +1,4 @@
-### Deze eerste opdracht was om individueel een boodschappenapplicatie te maken,genaamd BoodschApp. Hier heb ik React, html5, CSS3 en Bootstrap gebruikt.
+### Deze eerste opdracht was om individueel een boodschappenapplicatie te maken, genaamd BoodschApp. Hier heb ik React, html5, CSS4 en Bootstrap gebruikt.
 
 #### !! Belangrijk, installeer eerst de json-server en voer het uit om vertraging bij het laden van afbeeldingen en foutmeldingen in de browserinspecteur te voorkomen!!
 

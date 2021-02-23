@@ -24,7 +24,7 @@ export default function(state = initialState,action){
                         filteredItems: action.payload.items,
                         sort: action.payload.sort
             };
-        default:
+          default:
             return state;
     }
 }

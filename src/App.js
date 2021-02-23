@@ -30,7 +30,6 @@ class App extends Component {
          * Normally, you can’t use a connected component unless it is nested inside of a <Provider>.
          */
         <Provider store={store}>
-
             <div className="container">
                 <Header />
                 <HLine />
@@ -46,7 +45,6 @@ class App extends Component {
               </div>
                 <Footer />
             </div>
-
         </Provider>
     );
   }

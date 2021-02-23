@@ -6,7 +6,7 @@
       "title": "What an Eikel(oaknut)",
       "description": "As an insult the most literal English translation for eikel would be 'dickhead, The word acorn (earlier akerne, and acharn) is related to the Gothic name akran, which had the sense of \"fruit of the unenclosed land\".",
       "availableSizes": ["S","X", "XXL"],
-      "price": 15.7,
+      "price": 236.7,
       "isFreeShipping": true
     },
 
@@ -14,19 +14,19 @@
       "id": 2,
       "sku": 1496075960720,
       "title": "Untill the bitter end",
-      "description": "Juice and bitter, Delicious!",
+      "description": "botanical terminology, a berry is a simple fruit with seeds and pulp produced from the ovary of a single flower. It is fleshy throughout, except for the seeds!",
       "availableSizes": ["X", "M", "L"],
-      "price": 14.9,
+      "price": 500.9,
       "isFreeShipping": true
     },
 
     {
       "id": 3,
-      "sku": 5543778960720,
-      "title": "Rounded beauty",
-      "description": "Apples have religious and mythological significance in many cultures",
+      "sku": 4584330960720,
+      "title": "Ficus carica",
+      "description": "An Asian species of flowering plant in the mulberry family, known as the common fig",
       "availableSizes": ["X", "M", "L"],
-      "price": 17.9,
+      "price": 170.9,
       "isFreeShipping": true
     },
 
@@ -36,7 +36,7 @@
       "title": "Physalis ixocarpa",
       "description": "Mexican Fruit",
       "availableSizes": ["XXL"],
-      "price": 25.9,
+      "price": 59.9,
       "isFreeShipping": false
     },
 
@@ -46,17 +46,17 @@
       "title": "Morning has broken",
       "description": "A grape is a fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis",
       "availableSizes": ["L", "XL"],
-      "price": 10.8,
+      "price": 100.8,
       "isFreeShipping": false
     },
 
     {
       "id": 6,
-      "sku": 2277960720,
-      "title": "The forbidden taste",
-      "description": "The blackberry is an edible fruit produced by many species in the genus Rubus in the family Rosaceae, hybrids among these species within the subgenus Rubus, and hybrids between the subgenera Rubus and Idaeobatus",
+      "sku": 3513547960720,
+      "title": "Vaccinium corymbosum",
+      "description": "Vaccinium corymbosum, the northern highbush blueberry, is a North American species of blueberry which has become a food crop of significant economic importance",
       "availableSizes": ["XL", "XXL"],
-      "price": 54.50,
+      "price": 250.8,
       "isFreeShipping": false
     },
 
@@ -66,26 +66,26 @@
       "title": "Greene the grapes",
       "description": "The main antioxidant subtance in green grape is known as resveratrol. Green grapes contains more antioxidants and chlorophyll more that other variants of grape",
       "availableSizes": ["S"],
-      "price": 31.5,
+      "price": 310.5,
       "isFreeShipping": true
     },
 
     {
       "id": 8,
-      "sku": 864627960720,
-      "title": "Grandma is coming!!",
-      "description": "A lovely book that has a clock built in, enabling children to learn to tell the time whilst reading",
+      "sku": 3454504960720,
+      "title": "Hanging in there!!",
+      "description": "The raspberry is the edible fruit of a multitude of plant species in the genus Rubus of the rose family",
       "availableSizes": ["XL"],
-      "price": 18.7,
+      "price": 180.7,
       "isFreeShipping": false
     },
     {
       "id": 9,
-      "sku": 1789664960720,
-      "title": "What a party!",
-      "description": "Easy, versatile fruit salads are refreshing additions to any meal",
+      "sku": 5360265960720,
+      "title": "Mon Cherrie!",
+      "description": "The meanings embodied by cherries have varied through history, and the fruit and its blossoms hold different meanings in societies around the world",
       "availableSizes": ["L", "XL"],
-      "price": 132.9,
+      "price": 321.3,
       "isFreeShipping": true
     }
   ]

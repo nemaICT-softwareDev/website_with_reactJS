@@ -1,4 +1,4 @@
-import { ADD_TO_CART, REMOVE_FROM_CART } from "./types";
+import {ADD_TO_CART, EXCLUDE_PRODUCT, REMOVE_FROM_CART} from "./types";
 
 export const addToCart = (items, product) => (dispatch) => {
     const cartItems = items.slice();
@@ -12,7 +12,7 @@ export const addToCart = (items, product) => (dispatch) => {
     });
 
     if (!productAlreadyInCart) {
-        cartItems.push({ ...product, count: 1 });
+        cartItems.push({...product, count: 1 });
     }
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     dispatch({ type: ADD_TO_CART, payload: { cartItems } });
@@ -20,7 +20,7 @@ export const addToCart = (items, product) => (dispatch) => {
 
 export const removeFromCart = (items, product) => (dispatch) => {
 
-    let cartItems = items.slice();
+    const cartItems = items.slice();
     let toRemove = null;
     let itemFound = false;
 
@@ -40,4 +40,19 @@ export const removeFromCart = (items, product) => (dispatch) => {
     dispatch({
         type: REMOVE_FROM_CART,
         payload: { cartItems } });
+};
+
+// this function will filter the products list by ascending or descending order
+export const sortSelectedProducts = (itemsInCart, sort) => {
+
+    const cartItems = itemsInCart.slice();
+
+    if(sort !== ''){
+      cartItems.sort(
+            (a,b) => a.title > b.title? 1 : -1)
+    }else{
+       cartItems.sort(
+            (a,b) => a.title < b.title? 1 : -1)
+    }
+    return cartItems;
 };

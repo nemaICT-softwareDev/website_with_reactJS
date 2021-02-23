@@ -46,7 +46,7 @@ h1.title{
   color: white;
 }
 
-.pDescription{
+.prodDescription{
   font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
   /*font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;*/
   font-size: 1.5em;
@@ -70,23 +70,24 @@ h1.title{
   margin-left: 4%;
 }
 
-.productTitle{
-  padding-left: 5%;
+.productTitleLabel{
+  margin-left: 5%;
+
+
 }
 
-.productTitle:checked + .productTitle{
-  text-decoration: line-through;
+.productTitle:checked + .productTitleLabel{
+  /*color: grey;*/
+  text-decoration-line: line-through;
   text-decoration-color: black;
   opacity: 0.6;
-  /*filter: alpha(opacity=60); /* msie */
+  /*filter: alpha(opacity=60); !* msie *!*/
   background-color: grey;
 
 }
-.productTitle:default + .productTitle{
-  text-decoration: line-through;
-  opacity: 0.4;
-  filter: alpha(opacity=40); /* msie */
-  background-color: black;
+
+.descriptionQuote, .descriptionFooter, .descriptionLinks, .links{
+  color: #f8d301;
 }
 .descriptionFooter, .descriptionLinks, .descriptionQuote{
   font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
@@ -99,8 +100,14 @@ h1.title{
   font-weight: bold;
   margin-right: 0.6em;
 }
+
 .priceXProduct{
+  position: absolute;
+  right: 0px;
+  font-weight: bold;
   margin-right: 0.9em;
+  /*align-items: flex-end;*/
+
 }
 .header{
   margin-top: 3em;
@@ -115,7 +122,7 @@ h1.title{
 }
 .footer{
 
-  background-image: url("./bckGrnImg/3689760960720.jpg");
+  background-image: url("./bckGrnImg/1539540960720.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -123,10 +130,11 @@ h1.title{
   background-color: #464646;
   z-index: 0;
   margin-bottom: 3em;
-  color: #ffffff;
+  color: #2b2b2b;
+
 }
 .links{
-  color: #ffffff;
+   color: #2b2b2b;
 }
 
 .btn{
@@ -151,10 +159,5 @@ h1.title{
   border: 1px solid #745607;
   box-shadow: 3px 4px 3px #666;
 }
-.btn {
-   background-color: #938c64;
-}
-.btn-outline-primary{
-  background-color: #8e7f5d;
-  border-color: #8e7f5d;
-}
+
+

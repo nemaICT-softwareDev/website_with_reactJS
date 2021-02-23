@@ -7,7 +7,7 @@ class Footer extends React.Component {
         return (
             <MDBFooter color="blue" className="font-small pt-4 mt-4 footer">
                 <hr/>
-                <MDBContainer fluid className="text-center text-md-left">
+                <MDBContainer className="text-center text-md-left">
                     <MDBRow>
                         <MDBCol md="6">
                             <h5 className="descriptionFooter">Dalai Lama qoutes:</h5>
