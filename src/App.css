@@ -37,6 +37,7 @@
   }
 }
 
+
 h1.title{
   font-family: "Gill Sans Nova Cond Ultra Bold", "Algerian", "serif";
   color: white;
@@ -47,15 +48,17 @@ h1.title{
 }
 
 .prodDescription{
-  font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
-  /*font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;*/
-  font-size: 1.5em;
+  /*font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";*/
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  /*font-size: 1.5em;*/
+  position: relative;
   margin-bottom: 2%;
   text-decoration-color: #000000;
   text-align: center;
-  text-shadow:  0 1px 0 #777, 0 -1px 0 #000;
+  /*text-shadow:  0 1px 0 #777, 0 -1px 0 #000;*/
   text-transform: uppercase;
-  text-rendering: optimizeLegibility;
+  font-weight: bold;
+  /*text-rendering: optimizeLegibility;*/
 }
 
 .dotFreeList{
@@ -71,8 +74,9 @@ h1.title{
 }
 
 .productTitleLabel{
-  margin-left: 5%;
-
+  /*padding-right: 1%;*/
+  position: relative;
+  float: right;
 
 }
 
@@ -88,6 +92,7 @@ h1.title{
 
 .descriptionQuote, .descriptionFooter, .descriptionLinks, .links{
   color: #f8d301;
+  position: relative;
 }
 .descriptionFooter, .descriptionLinks, .descriptionQuote{
   font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
@@ -95,6 +100,7 @@ h1.title{
   font-style: italic;
   font-weight: bold;
 }
+
 .totalPrice{
   font-size: 1.5em;
   font-weight: bold;
@@ -102,11 +108,11 @@ h1.title{
 }
 
 .priceXProduct{
-  position: absolute;
-  right: 0px;
+  position: relative;
   font-weight: bold;
   margin-right: 0.9em;
-  /*align-items: flex-end;*/
+  float: right;
+  align-items: flex-end;
 
 }
 .header{
@@ -146,8 +152,6 @@ h1.title{
   margin-top: 6%;
   color: black;
   text-shadow: -4px 3px 3px #BBB;
-
-
 }
 .thumbnail{
   background-color: #efddd4;
@@ -158,6 +162,13 @@ h1.title{
   background-color: #efddd4;
   border: 1px solid #745607;
   box-shadow: 3px 4px 3px #666;
+}
+.glyphicon{
+  position: relative;
+}
+
+.form-group-sm{
+  padding-left: 2%;
 }
 
 

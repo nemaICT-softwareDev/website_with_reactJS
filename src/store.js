@@ -3,7 +3,7 @@ import thunk from 'redux-thunk';
 // The rootReducer is the index.js file that uses the combineReducers coming from the redux framework
 import rootReducer from './reducers';
 
-// Here we define an empty object to initialize the state of the app
+// Here we define an empty object to initialize the state of the app as an empty state
 const initialState = {};
 if(localStorage.getItem('cartItems')){
     initialState.cart = {items: JSON.parse(localStorage.getItem('cartItems'))};

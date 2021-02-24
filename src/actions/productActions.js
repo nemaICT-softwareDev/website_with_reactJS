@@ -39,7 +39,6 @@ export const sortProducts = (items, sort) => (dispatch) => {
         products.sort(
             (a,b) =>
                 (a.id > b.id ? 1 : -1));//display product by id asc
-                // a.id > b.id);
     }
       dispatch({
         type: ORDER_PRODUCTS_BY_PRICE,

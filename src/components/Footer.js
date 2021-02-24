@@ -36,7 +36,7 @@ class Footer extends React.Component {
                     </MDBRow>
                 </MDBContainer>
                 <div className="footer-copyright text-center py-3">
-                    <MDBContainer fluid>
+                    <MDBContainer>
                         &copy; {new Date().getFullYear()} <a href="#">Webmaster</a>
                     </MDBContainer>
                 </div>

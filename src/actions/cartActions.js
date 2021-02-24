@@ -1,4 +1,5 @@
 import {ADD_TO_CART, EXCLUDE_PRODUCT, REMOVE_FROM_CART} from "./types";
+import update from "immutability-helper";
 
 export const addToCart = (items, product) => (dispatch) => {
     const cartItems = items.slice();
@@ -18,7 +19,7 @@ export const addToCart = (items, product) => (dispatch) => {
     dispatch({ type: ADD_TO_CART, payload: { cartItems } });
 };
 
-export const removeFromCart = (items, product) => (dispatch) => {
+export const singleRemoveFromCart = (items, product) => (dispatch) => {
 
     const cartItems = items.slice();
     let toRemove = null;
@@ -42,17 +43,45 @@ export const removeFromCart = (items, product) => (dispatch) => {
         payload: { cartItems } });
 };
 
-// this function will filter the products list by ascending or descending order
-export const sortSelectedProducts = (itemsInCart, sort) => {
+export const handleTotalRemove = (items, cartItem) => (dispatch) =>{
 
-    const cartItems = itemsInCart.slice();
+    const cartItems = items.slice();
+    const index = cartItems.find((item) => item.id === cartItem.id)
+        if(index.id === cartItem.id) {
+            cartItems.splice(index, 1)
+        }
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    dispatch({
+        type: REMOVE_FROM_CART,
+        payload: { cartItems } });
+}
 
-    if(sort !== ''){
-      cartItems.sort(
-            (a,b) => a.title > b.title? 1 : -1)
-    }else{
-       cartItems.sort(
-            (a,b) => a.title < b.title? 1 : -1)
-    }
-    return cartItems;
-};
+export const sortSelectedProducts = (items, itemToBeMoved) => {
+    return (dispatch) => {
+
+        let cartItems = items.slice();
+        let index = cartItems.find((item) => item.id === itemToBeMoved.id)
+        let removedItemList = null
+        let newListWithAddedItem = null
+
+        if (itemToBeMoved !== '') {
+            // remove item and return new list without it
+            removedItemList = update(cartItems, {$splice: [[index, 1]]})
+            // insert item at the end of the array
+            newListWithAddedItem = update(removedItemList, {$push: [index]})
+            // update cartItems with new state
+            cartItems = update(newListWithAddedItem, {$splice: [[index, 0]]})
+
+           //cartItems.sort((a,b) => { return a.title < b.title ? 1 : -1})
+           console.log(cartItems);
+
+        }
+        dispatch({
+            type: EXCLUDE_PRODUCT,
+            payload: {
+                sort: itemToBeMoved,
+                items: cartItems,
+            },
+        })
+    };
+}

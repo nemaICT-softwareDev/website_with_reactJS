@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import util from '../util';
 import {connect} from 'react-redux';
 import {fetchProducts} from '../actions/productActions';
-import {addToCart, removeFromCart} from "../actions/cartActions";
+import {addToCart, singleRemoveFromCart} from "../actions/cartActions";
 import {changeBackground} from "../actions/ChangeColor";
+
 
 class Products extends Component {
     componentDidMount() {
@@ -17,21 +18,19 @@ class Products extends Component {
                 <div className="col-md-4" key={product.id}>
                      <div className="thumbnail">
                                <a>
-                                   <div>
-                                        <p className="prodDescription">{product.title}</p>
+                                   <div className={"container-fluid prodDescription"}>
+                                       {product.title}
                                    </div>
                                    <img src={`products/${product.sku}.jpg`} alt={product.title} title={product.description}/>
-                                   <div className={"pPrice"}>
-                                         <p>
+                                   <div className={"fluid pPrice"}>
                                              <span className="glyphicon glyphicon-euro"/>
                                              &nbsp;{util.formatCurrency(product.price)}
-                                         </p>
                                    </div>
                                </a><hr/>
-                        <div className="btn-group btn-group-justified ">
+                        <div className="btn-group btn-group-justified">
                             <button type="button"
                                     className="btn btn-outline-dark"
-                                    onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>Add to&nbsp;
+                                    onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>Add&nbsp;
                                <span
                                    className="glyphicon glyphicon-shopping-cart"></span>
                             </button>
@@ -64,4 +63,4 @@ const mapStateToProps = (state) => ({
     cartItems: state.cart.items
 });
 // here we use the fetchProducts action and return the new state
-export default connect(mapStateToProps, {fetchProducts, addToCart, removeFromCart })(Products);
+export default connect(mapStateToProps, {fetchProducts, addToCart, removeFromCart: singleRemoveFromCart })(Products);

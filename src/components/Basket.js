@@ -1,48 +1,21 @@
 import React, {Component} from 'react';
 import util from "../util";
 import { connect } from "react-redux";
-import { addToCart, removeFromCart} from "../actions/cartActions";
-import update from 'immutability-helper';
+import { addToCart, singleRemoveFromCart, handleTotalRemove, sortSelectedProducts} from "../actions/cartActions";
+
 
 class Basket extends Component {
 
-        state = {
-            chBxIsSelected : false,
-            itemsCart : []
-        };
+        checkChange = (e) => {
 
-        handleChange = (e) => {
-                    this.setState({[e.target.name]: e.target.checked});
-                    this.setState([this.state.chBxIsSelected] = true);
+            this.setState({[e.target.name]: e.target.checked});
         }
-
-    // sortSelectedProducts = (itemInCart) => {
-    //
-    //     //let cartItems = itemsInCart.slice();
-    //   //
-    //   //   itemsInCart.sort((a,b) => {
-    //   //   if(this.state.chBxIsSelected === true && a.title > b.title){
-    //   //       return 1;
-    //   //   }else{
-    //   //      return -1;
-    //   //   }
-    //   // });
-    //
-    //     const index = itemInCart.findIndex((item) => item.id === item.id);
-    //     const updatedItems = update(itemInCart, {$splice: [[index, 1, itemInCart]]});  // array.splice(start, deleteCount, item1)
-    //     this.setState({employees: updatedItems});
-    //     return updatedItems;
-    //
-    // }
-
-    // twoCalls = e => {
-    //     this.handleChange(e);
-    //     this.sortSelectedProducts(e);
-    //     }
-
+        uncheckChange = (e) => {
+            this.setState({[this.state]: e.target.value})
+        }
     render() {
+
         const {cartItems} = this.props;
-        const {chBxIsSelected} = this.state;
          return (
             <div className="cart">
                 { !cartItems.length?
@@ -56,25 +29,28 @@ class Basket extends Component {
                 {cartItems.length > 0 &&
                 <div>
                     <ul className="dotFreeList">
-                        {cartItems.map((item) => (
-                            <li key={item.id}  className="list-unstyled">
-                                <div className="form-check" >
-                                    <input className="custom-checkbox productTitle"
-                                           type="checkbox"
-                                           id={item.title}
-                                           name={chBxIsSelected}
-                                           defaultChecked={this.state.chBxIsSelected}
+                        {cartItems.map((item) => <li key={item.id}  className="list-unstyled">
+                            <div className="form-group-sm" >
+                               <button type={"button"} className={"btn btn-outline-dark"} value={"Delete"}
+                                   onClick={() => {this.props.handleRemove(this.props.cartItems, item)}}
+                                   onChange={this.uncheckChange}>
+                                   Delete</button>&nbsp;&nbsp;&nbsp;
+                                <input className="custom-checkbox productTitle"
+                                       type="checkbox"
+                                       id={item.title}
+                                       name={item.title}
+                                       value={item.title}
+                                       onChange={this.checkChange}
+                                       onClick={(e) => {
+                                       this.props.sortSelectedProducts(this.props.cartItems, item)}}
 
-                                    />
-                                     <label className="productTitleLabel" htmlFor={item.title}>&nbsp;{item.title}
-                                     <span className="priceXProduct">
-                                     { this.state.chBxIsSelected !== false ?  0 + " X " + util.formatCurrency(item.price) :
-                                       item.count + " X " + util.formatCurrency(item.price)
-                                     }
-                                    </span></label>
-                                </div>
-                            </li>
-                        ))}
+                                />
+                                 <label className="productTitleLabel" htmlFor={item.title}>&nbsp;{item.title}
+                                 <span className="priceXProduct">
+                                 {item.count + " X " + util.formatCurrency(item.price)}
+                                 </span>&nbsp; </label>
+                            </div>
+                        </li>)}
                     </ul>
                     <hr />
                     <div className="text-right">
@@ -96,4 +72,4 @@ class Basket extends Component {
 const mapStateToProps = (state) =>({
     cartItems: state.cart.items,
 });
-export default connect(mapStateToProps, { addToCart , removeFromCart})(Basket);
+export default connect(mapStateToProps, { addToCart , removeFromCart: singleRemoveFromCart, handleRemove: handleTotalRemove, sortSelectedProducts})(Basket);
