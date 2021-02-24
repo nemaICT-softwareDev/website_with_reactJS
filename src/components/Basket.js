@@ -7,10 +7,11 @@ import { addToCart, singleRemoveFromCart, handleTotalRemove, sortSelectedProduct
 class Basket extends Component {
 
         checkChange = (e) => {
-
+            //e.preventDefault();
             this.setState({[e.target.name]: e.target.checked});
         }
         uncheckChange = (e) => {
+            //e.preventDefault();
             this.setState({[this.state]: e.target.value})
         }
     render() {
@@ -30,7 +31,7 @@ class Basket extends Component {
                 <div>
                     <ul className="dotFreeList">
                         {cartItems.map((item) => <li key={item.id}  className="list-unstyled">
-                            <div className="form-group-sm" >
+                            <div className="form-check" >
                                <button type={"button"} className={"btn btn-outline-dark"} value={"Delete"}
                                    onClick={() => {this.props.handleRemove(this.props.cartItems, item)}}
                                    onChange={this.uncheckChange}>
@@ -43,7 +44,6 @@ class Basket extends Component {
                                        onChange={this.checkChange}
                                        onClick={(e) => {
                                        this.props.sortSelectedProducts(this.props.cartItems, item)}}
-
                                 />
                                  <label className="productTitleLabel" htmlFor={item.title}>&nbsp;{item.title}
                                  <span className="priceXProduct">

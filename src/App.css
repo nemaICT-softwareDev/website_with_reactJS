@@ -48,9 +48,9 @@ h1.title{
 }
 
 .prodDescription{
-  /*font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";*/
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-  /*font-size: 1.5em;*/
+  font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
+  /*font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;*/
+  font-size: 110%;
   position: relative;
   margin-bottom: 2%;
   text-decoration-color: #000000;
@@ -170,5 +170,3 @@ h1.title{
 .form-group-sm{
   padding-left: 2%;
 }
-
-

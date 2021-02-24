@@ -3,7 +3,7 @@
     {
       "id": 1,
       "sku": 3700512960720,
-      "title": "What an Eikel(oaknut)",
+      "title": "Eikel",
       "description": "As an insult the most literal English translation for eikel would be 'dickhead, The word acorn (earlier akerne, and acharn) is related to the Gothic name akran, which had the sense of \"fruit of the unenclosed land\".",
       "availableSizes": ["S","X", "XXL"],
       "price": 236.7,
@@ -13,7 +13,7 @@
     {
       "id": 2,
       "sku": 1496075960720,
-      "title": "Untill the bitter end",
+      "title": "Bitter & sweet",
       "description": "botanical terminology, a berry is a simple fruit with seeds and pulp produced from the ovary of a single flower. It is fleshy throughout, except for the seeds!",
       "availableSizes": ["X", "M", "L"],
       "price": 500.9,
@@ -43,7 +43,7 @@
     {
       "id": 5,
       "sku": 3550733960720,
-      "title": "Morning has broken",
+      "title": "Sunny 4 ever",
       "description": "A grape is a fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis",
       "availableSizes": ["L", "XL"],
       "price": 100.8,
@@ -53,7 +53,7 @@
     {
       "id": 6,
       "sku": 3513547960720,
-      "title": "Vaccinium corymbosum",
+      "title": "Corymbosum",
       "description": "Vaccinium corymbosum, the northern highbush blueberry, is a North American species of blueberry which has become a food crop of significant economic importance",
       "availableSizes": ["XL", "XXL"],
       "price": 250.8,
@@ -63,7 +63,7 @@
     {
       "id": 7,
       "sku": 3467373960720,
-      "title": "Greene the grapes",
+      "title": "Grappies",
       "description": "The main antioxidant subtance in green grape is known as resveratrol. Green grapes contains more antioxidants and chlorophyll more that other variants of grape",
       "availableSizes": ["S"],
       "price": 310.5,
@@ -73,7 +73,7 @@
     {
       "id": 8,
       "sku": 3454504960720,
-      "title": "Hanging in there!!",
+      "title": "Favourite one!!",
       "description": "The raspberry is the edible fruit of a multitude of plant species in the genus Rubus of the rose family",
       "availableSizes": ["XL"],
       "price": 180.7,

@@ -1,4 +1,4 @@
-import {FETCH_PRODUCTS, FILTER_PRODUCTS_BY_SIZE, ORDER_PRODUCTS_BY_PRICE} from "../actions/types";
+import {EXCLUDE_PRODUCT, FETCH_PRODUCTS, FILTER_PRODUCTS_BY_SIZE, ORDER_PRODUCTS_BY_PRICE} from "../actions/types";
 
 // The reducer evaluates the current state and return a up to dated state of the App
 // In the productReducer by default we initialize the state of all objects as empty
@@ -24,7 +24,7 @@ export default function(state = initialState,action){
                         filteredItems: action.payload.items,
                         sort: action.payload.sort
             };
-          default:
+         default:
             return state;
     }
 }

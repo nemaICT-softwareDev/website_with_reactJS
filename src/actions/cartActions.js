@@ -43,18 +43,23 @@ export const singleRemoveFromCart = (items, product) => (dispatch) => {
         payload: { cartItems } });
 };
 
-export const handleTotalRemove = (items, cartItem) => (dispatch) =>{
+export const handleTotalRemove = (items, item) => (dispatch) =>{
 
     const cartItems = items.slice();
-    const index = cartItems.find((item) => item.id === cartItem.id)
-        if(index.id === cartItem.id) {
-            cartItems.splice(index, 1)
-        }
+    let toRemove = null;
+
+    cartItems.forEach((cartItem) => {
+        if (cartItem.id === item.id) {
+            toRemove = cartItems.indexOf(cartItem)
+            cartItems.splice(toRemove,1)
+        }})
+
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     dispatch({
         type: REMOVE_FROM_CART,
         payload: { cartItems } });
-}
+    }
+
 
 export const sortSelectedProducts = (items, itemToBeMoved) => {
     return (dispatch) => {

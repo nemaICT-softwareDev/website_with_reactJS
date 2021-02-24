@@ -3,8 +3,6 @@ import util from '../util';
 import {connect} from 'react-redux';
 import {fetchProducts} from '../actions/productActions';
 import {addToCart, singleRemoveFromCart} from "../actions/cartActions";
-import {changeBackground} from "../actions/ChangeColor";
-
 
 class Products extends Component {
     componentDidMount() {
@@ -21,34 +19,38 @@ class Products extends Component {
                                    <div className={"container-fluid prodDescription"}>
                                        {product.title}
                                    </div>
-                                   <img src={`products/${product.sku}.jpg`} alt={product.title} title={product.description}/>
+                                         <img src={`products/${product.sku}.jpg`} alt={product.title} title={product.description}/>
                                    <div className={"fluid pPrice"}>
-                                             <span className="glyphicon glyphicon-euro"/>
-                                             &nbsp;{util.formatCurrency(product.price)}
+                                          <span className="glyphicon glyphicon-euro"/>
+                                          &nbsp;{util.formatCurrency(product.price)}
                                    </div>
                                </a><hr/>
-                        <div className="btn-group btn-group-justified">
+                        <div className="btn-group btn-group-md btn-group-justified">
                             <button type="button"
                                     className="btn btn-outline-dark"
                                     onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>Add&nbsp;
                                <span
                                    className="glyphicon glyphicon-shopping-cart"></span>
                             </button>
-                                <button type="button" className="btn btn-outline-dark"
-                                            datatype="minus" data-field=""
-                                            onClick={() =>{
-                                                this.props.removeFromCart(this.props.cartItems, product)}}><span
-                                    className="glyphicon glyphicon-minus"></span>
-                                </button>
-                                <button type="button" className="btn btn-outline-dark"
+                            <button type="button"
+                                    className="btn btn-outline-dark"
+                                    datatype="minus" data-field=""
+                                    onClick={() =>{
+                                    this.props.removeFromCart(this.props.cartItems, product)}}>
+                                <span
+                                    className="glyphicon glyphicon-minus">
+                                </span>
+                            </button>
+                            <button type="button" className="btn btn-outline-dark"
                                         datatype="plus" data-field=""
                                         onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>
-                                    <span
-                                        className="glyphicon glyphicon-plus"></span>
-                                </button>
-                                 </div>
-                             </div>
-                    </div>
+                                 <span
+                                        className="glyphicon glyphicon-plus">
+                                 </span>
+                            </button>
+                        </div>
+                     </div>
+                </div>
             )
         )
         return (
