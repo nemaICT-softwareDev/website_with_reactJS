@@ -27,13 +27,13 @@ class Products extends Component {
                                </a><hr/>
                         <div className="btn-group btn-group-md btn-group-justified">
                             <button type="button"
-                                    className="btn btn-outline-dark"
+                                    className="btn btn-outline-warning"
                                     onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>Add&nbsp;
                                <span
                                    className="glyphicon glyphicon-shopping-cart"></span>
                             </button>
                             <button type="button"
-                                    className="btn btn-outline-dark"
+                                    className="btn btn-outline-warning"
                                     datatype="minus" data-field=""
                                     onClick={() =>{
                                     this.props.removeFromCart(this.props.cartItems, product)}}>
@@ -41,7 +41,7 @@ class Products extends Component {
                                     className="glyphicon glyphicon-minus">
                                 </span>
                             </button>
-                            <button type="button" className="btn btn-outline-dark"
+                            <button type="button" className="btn btn-outline-warning"
                                         datatype="plus" data-field=""
                                         onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>
                                  <span

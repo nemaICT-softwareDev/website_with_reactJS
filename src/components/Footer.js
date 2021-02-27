@@ -5,17 +5,15 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 class Footer extends React.Component {
     render() {
         return (
-            <MDBFooter color="blue" className="font-small pt-4 mt-4 footer">
-                <hr/>
+             <MDBFooter color="blue" className="font-small pt-4 mt-4 footer">
                 <MDBContainer className="text-center text-md-left">
                     <MDBRow>
                         <MDBCol md="6">
-                            <h5 className="descriptionFooter">Dalai Lama qoutes:</h5>
                                 <blockquote className={"descriptionQuote"}>"Don't ever mistake my silence for ignorance,
                                     my calmness for acceptance or my kindness for weakness.
                                     Compassion and tolerance are not a sign of weakness, but a sign of strength."</blockquote>
                         </MDBCol>
-                        <MDBCol md="4" >
+                        <MDBCol md="4" className={"pull-right"}>
                             <h5 className="descriptionLinks">Interessante Links</h5>
                             <ul>
                                 <li className="list-unstyled ">
@@ -37,7 +35,7 @@ class Footer extends React.Component {
                 </MDBContainer>
                 <div className="footer-copyright text-center py-3">
                     <MDBContainer>
-                        &copy; {new Date().getFullYear()} <a href="#">Webmaster</a>
+                       <p className={"dateFooter"}> &copy; {new Date().getFullYear()} <a href="#">Webmaster</a></p>
                     </MDBContainer>
                 </div>
             </MDBFooter>

@@ -1,5 +1,4 @@
-import {ADD_TO_CART, EXCLUDE_PRODUCT, REMOVE_FROM_CART} from "./types";
-import update from "immutability-helper";
+import {ADD_TO_CART, REPLACE_PRODUCT, REMOVE_FROM_CART} from "./types";
 
 export const addToCart = (items, product) => (dispatch) => {
     const cartItems = items.slice();
@@ -61,31 +60,29 @@ export const handleTotalRemove = (items, item) => (dispatch) =>{
     }
 
 
-export const sortSelectedProducts = (items, itemToBeMoved) => {
+export const sortSelectedProducts = (items, itemToBeReplaced) => {
+
     return (dispatch) => {
 
         let cartItems = items.slice();
-        let index = cartItems.find((item) => item.id === itemToBeMoved.id)
-        let removedItemList = null
-        let newListWithAddedItem = null
+        let foundItem = cartItems.find((item) => item.id === itemToBeReplaced.id)
+        let itemAddedEndOfList
 
-        if (itemToBeMoved !== '') {
-            // remove item and return new list without it
-            removedItemList = update(cartItems, {$splice: [[index, 1]]})
-            // insert item at the end of the array
-            newListWithAddedItem = update(removedItemList, {$push: [index]})
-            // update cartItems with new state
-            cartItems = update(newListWithAddedItem, {$splice: [[index, 0]]})
 
-           //cartItems.sort((a,b) => { return a.title < b.title ? 1 : -1})
-           console.log(cartItems);
-
+        if(foundItem.id === itemToBeReplaced.id){
+            cartItems.splice(foundItem, 1)
+            itemAddedEndOfList = {...cartItems, foundItem}
+            //this.setState({cartItems: itemAddedEndOfList})
+            //cartItems.push(foundItem)
         }
+
+        console.log(itemAddedEndOfList)
+        localStorage.setItem("cartItems", JSON.stringify(itemAddedEndOfList));
         dispatch({
-            type: EXCLUDE_PRODUCT,
+            type: REPLACE_PRODUCT,
             payload: {
-                sort: itemToBeMoved,
-                items: cartItems,
+                items: itemAddedEndOfList,
+                sort: foundItem,
             },
         })
     };

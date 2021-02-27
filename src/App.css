@@ -79,7 +79,6 @@ h1.title{
   float: right;
 
 }
-
 .productTitle:checked + .productTitleLabel{
   /*color: grey;*/
   text-decoration-line: line-through;
@@ -89,12 +88,11 @@ h1.title{
   background-color: grey;
 
 }
-
-.descriptionQuote, .descriptionFooter, .descriptionLinks, .links{
-  color: #f8d301;
+.descriptionQuote, .descriptionLinks, .links{
+  color: #fffefc;
   position: relative;
 }
-.descriptionFooter, .descriptionLinks, .descriptionQuote{
+.descriptionLinks, .descriptionQuote{
   font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
   font-size: 1.5em;
   font-style: italic;
@@ -127,10 +125,9 @@ h1.title{
   /*opacity: 0.9;*/
 }
 .footer{
-
-  background-image: url("./bckGrnImg/1539540960720.jpg");
-  background-position: center center;
+  background-image: url("./bckGrnImg/2895335960720.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
@@ -139,8 +136,8 @@ h1.title{
   color: #2b2b2b;
 
 }
-.links{
-   color: #2b2b2b;
+a.links{
+   color: #fcfcfc;
 }
 
 .btn{
@@ -162,6 +159,8 @@ h1.title{
   background-color: #efddd4;
   border: 1px solid #745607;
   box-shadow: 3px 4px 3px #666;
+  margin-top: 1.5em;
+
 }
 .glyphicon{
   position: relative;
@@ -170,3 +169,9 @@ h1.title{
 .form-group-sm{
   padding-left: 2%;
 }
+
+p.dateFooter{
+  color: white;
+}
+
+

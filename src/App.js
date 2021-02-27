@@ -5,7 +5,7 @@ import Filter from "./components/Filter";
 import Basket from "./components/Basket";
 import store from "./store";
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HLine from "./components/HLine";
@@ -15,7 +15,7 @@ class App extends Component {
     componentDidMount() {
         /**
          * Here we fetch the json API server to get the list of products
-         * Check if is there any file in the localStore from previous session to be loaded in the choppingCart
+         * Check if is there any file in the localStore from previous session to be reloaded in the choppingCart
          */
         if(localStorage.getItem("cartItems")){
             this.setState({ cartItems: JSON.parse(localStorage.getItem("cartItems"))});

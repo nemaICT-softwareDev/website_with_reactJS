@@ -13,7 +13,7 @@
     {
       "id": 2,
       "sku": 1496075960720,
-      "title": "Bitter & sweet",
+      "title": "Bitter",
       "description": "botanical terminology, a berry is a simple fruit with seeds and pulp produced from the ovary of a single flower. It is fleshy throughout, except for the seeds!",
       "availableSizes": ["X", "M", "L"],
       "price": 500.9,
@@ -23,7 +23,7 @@
     {
       "id": 3,
       "sku": 4584330960720,
-      "title": "Ficus carica",
+      "title": "FicusCarica",
       "description": "An Asian species of flowering plant in the mulberry family, known as the common fig",
       "availableSizes": ["X", "M", "L"],
       "price": 170.9,
@@ -33,7 +33,7 @@
     {
       "id": 4,
       "sku": 3699126960720,
-      "title": "Physalis ixocarpa",
+      "title": "Ixocarpa",
       "description": "Mexican Fruit",
       "availableSizes": ["XXL"],
       "price": 59.9,
@@ -43,7 +43,7 @@
     {
       "id": 5,
       "sku": 3550733960720,
-      "title": "Sunny 4 ever",
+      "title": "Sunny day",
       "description": "A grape is a fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis",
       "availableSizes": ["L", "XL"],
       "price": 100.8,
@@ -53,7 +53,7 @@
     {
       "id": 6,
       "sku": 3513547960720,
-      "title": "Corymbosum",
+      "title": "BlackBerries",
       "description": "Vaccinium corymbosum, the northern highbush blueberry, is a North American species of blueberry which has become a food crop of significant economic importance",
       "availableSizes": ["XL", "XXL"],
       "price": 250.8,
@@ -73,7 +73,7 @@
     {
       "id": 8,
       "sku": 3454504960720,
-      "title": "Favourite one!!",
+      "title": "Jammi'n!!",
       "description": "The raspberry is the edible fruit of a multitude of plant species in the genus Rubus of the rose family",
       "availableSizes": ["XL"],
       "price": 180.7,
@@ -82,7 +82,7 @@
     {
       "id": 9,
       "sku": 5360265960720,
-      "title": "Mon Cherrie!",
+      "title": "MonCherrie!",
       "description": "The meanings embodied by cherries have varied through history, and the fruit and its blossoms hold different meanings in societies around the world",
       "availableSizes": ["L", "XL"],
       "price": 321.3,

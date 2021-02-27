@@ -12,10 +12,8 @@ class Basket extends Component {
         }
         uncheckChange = (e) => {
             //e.preventDefault();
-            this.setState({[this.state]: e.target.value})
-        }
+            this.setState({[this.state]: e.target.value})        }
     render() {
-
         const {cartItems} = this.props;
          return (
             <div className="cart">
@@ -32,18 +30,16 @@ class Basket extends Component {
                     <ul className="dotFreeList">
                         {cartItems.map((item) => <li key={item.id}  className="list-unstyled">
                             <div className="form-check" >
-                               <button type={"button"} className={"btn btn-outline-dark"} value={"Delete"}
-                                   onClick={() => {this.props.handleRemove(this.props.cartItems, item)}}
-                                   onChange={this.uncheckChange}>
-                                   Delete</button>&nbsp;&nbsp;&nbsp;
+                               <button type={"button"} className={"btn btn-outline-warning"} value={"Delete"}
+                                   onClick={() => {this.props.handleRemove(this.props.cartItems, item)}}>
+                                   Delete
+                               </button>&nbsp;&nbsp;&nbsp;
                                 <input className="custom-checkbox productTitle"
                                        type="checkbox"
                                        id={item.title}
                                        name={item.title}
-                                       value={item.title}
-                                       onChange={this.checkChange}
-                                       onClick={(e) => {
-                                       this.props.sortSelectedProducts(this.props.cartItems, item)}}
+                                       onChange={() =>this.props.sortSelectedProducts(this.props.cartItems, item)}
+
                                 />
                                  <label className="productTitleLabel" htmlFor={item.title}>&nbsp;{item.title}
                                  <span className="priceXProduct">
@@ -52,14 +48,14 @@ class Basket extends Component {
                             </div>
                         </li>)}
                     </ul>
-                    <hr />
                     <div className="text-right">
+                        <hr />
                         <p className="totalPrice"><span className="glyphicon glyphicon-euro"/> {util.formatCurrency(
                             cartItems.reduce((a,c) => a + c.count * c.price, 0)
                         )}</p>
-                          <button className="btn btn-outline-dark" onClick={( ) =>
+                          <button className="btn btn-outline-warning" onClick={( ) =>
                               alert("Deze knop is niet geïmplementeerd omdat deze niet binnen het scope van dit project valt, " +
-                                  "de aanwezigheid van deze knop hier is slechts figuurlijk.")}>
+                                  "de aanwezigheid van deze knop hier is slechts esthetisch en figuurlijk.")}>
                             Checkout
                         </button>
                     </div>

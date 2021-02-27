@@ -6,12 +6,12 @@ class Filter extends Component {
     render() {
         return (
             <div className="row">
-                <div className="col-md-4">
+                <div className="col-md-4 productsFound">
                     {/* Here we display the number of active founded products */}
                     {this.props.filteredProducts.length} products found.
                 </div>
                 <div className="col-md-4">
-                    <label> Order by
+                    <label className={"sorting"}> Order by
                         <select
                             className="form-control"
                             value={this.props.sort}
@@ -29,7 +29,7 @@ class Filter extends Component {
                     </label>
                 </div>
                 <div className="col-md-4">
-                    <label> Filter size
+                    <label className={"sorting"}> Filter size
                         <select className="form-control" value={this.props.size}
                             onChange={(e) => {
                             this.props.filterProducts(
