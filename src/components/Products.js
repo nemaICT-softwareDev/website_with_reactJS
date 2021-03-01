@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import util from '../util';
 import {connect} from 'react-redux';
 import {fetchProducts} from '../actions/productActions';
-import {addToCart, singleRemoveFromCart} from "../actions/cartActions";
+import {addToCart, handleSingleRemove} from "../actions/cartActions";
 
 class Products extends Component {
     componentDidMount() {
@@ -65,4 +65,4 @@ const mapStateToProps = (state) => ({
     cartItems: state.cart.items
 });
 // here we use the fetchProducts action and return the new state
-export default connect(mapStateToProps, {fetchProducts, addToCart, removeFromCart: singleRemoveFromCart })(Products);
+export default connect(mapStateToProps, {fetchProducts, addToCart, removeFromCart: handleSingleRemove })(Products);

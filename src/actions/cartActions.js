@@ -4,9 +4,9 @@ export const addToCart = (items, product) => (dispatch) => {
     const cartItems = items.slice();
     let productAlreadyInCart = false;
 
-    cartItems.forEach((cp) => {
-        if (cp.id === product.id) {
-            cp.count += 1;
+    cartItems.forEach((cartItem) => {
+        if (cartItem.id === product.id) {
+            cartItem.count += 1;
             productAlreadyInCart = true;
         }
     });
@@ -18,7 +18,7 @@ export const addToCart = (items, product) => (dispatch) => {
     dispatch({ type: ADD_TO_CART, payload: { cartItems } });
 };
 
-export const singleRemoveFromCart = (items, product) => (dispatch) => {
+export const handleSingleRemove = (items, product) => (dispatch) => {
 
     const cartItems = items.slice();
     let toRemove = null;
@@ -60,30 +60,28 @@ export const handleTotalRemove = (items, item) => (dispatch) =>{
     }
 
 
-export const sortSelectedProducts = (items, itemToBeReplaced) => {
+export const sortSelectedProducts = (items, itemToBeReplaced) => (dispatch) => {
 
-    return (dispatch) => {
+    /*The way to “tell” Redux that the state has changed is to create a new object -
+      which will have a new reference. We do that by cloning the old state, and adding
+      our changes on top of the new object*/
+    // let cartItems = Object.assign(items.slice(), items, { modalOpen: true })
+    let cartItems = items.slice()
+    let foundItem = cartItems.find((item) => item.id === itemToBeReplaced.id)
+    let itemAddedEndOfList
 
-        let cartItems = items.slice();
-        let foundItem = cartItems.find((item) => item.id === itemToBeReplaced.id)
-        let itemAddedEndOfList
-
-
-        if(foundItem.id === itemToBeReplaced.id){
-            cartItems.splice(foundItem, 1)
-            itemAddedEndOfList = {...cartItems, foundItem}
-            //this.setState({cartItems: itemAddedEndOfList})
-            //cartItems.push(foundItem)
-        }
-
-        console.log(itemAddedEndOfList)
-        localStorage.setItem("cartItems", JSON.stringify(itemAddedEndOfList));
-        dispatch({
-            type: REPLACE_PRODUCT,
-            payload: {
-                items: itemAddedEndOfList,
-                sort: foundItem,
-            },
-        })
-    };
+    if (foundItem.id === itemToBeReplaced.id) {
+        cartItems.splice(foundItem, 1)
+        itemAddedEndOfList = {...cartItems, foundItem}
+    }
+    // console.log(cartItems === items)
+    console.log(itemAddedEndOfList)
+    //localStorage.setItem("cartItems", JSON.stringify(itemAddedEndOfList));
+    dispatch({
+        type: REPLACE_PRODUCT,
+        payload: {
+            items: itemAddedEndOfList,
+            item: foundItem,
+        },
+    })
 }

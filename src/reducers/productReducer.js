@@ -8,19 +8,22 @@ export default function(state = initialState,action){
         case FETCH_PRODUCTS:
             // fill in the items array with the list of products from the json api
             // and return the new state
-            return{ ...state,
+            return{
+                    ...state,
                     items: action.payload,
                     filteredItems: action.payload
             };
         case FILTER_PRODUCTS_BY_SIZE:
             // here we get the payload items and size coming from the productActions(filterProducts. Function)
-            return {...state,
+            return {
+                        ...state,
                         filteredItems: action.payload.items,
                         size: action.payload.size
             };
         case ORDER_PRODUCTS_BY_PRICE:
             // here we get the payload items and price coming from the productActions(filterProducts. Function)
-            return {...state,
+            return {
+                        ...state,
                         filteredItems: action.payload.items,
                         sort: action.payload.sort
             };
