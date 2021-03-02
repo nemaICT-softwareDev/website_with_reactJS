@@ -10,7 +10,7 @@ class Products extends Component {
     }
     render() {
         /**
-         * Here we use the map to convert the array products into JSX elements
+         * Here we use the map to convert the json products file into JSX elements
          */
         const productItems = this.props.products.map( (product) => (
                 <div className="col-md-4" key={product.id}>
