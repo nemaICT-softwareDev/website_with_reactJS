@@ -64,29 +64,22 @@ export const handleTotalRemove = (items, item) => (dispatch) =>{
         payload: { cartItems } });
     }
 
-
 export const sortSelectedProducts = (items, item) => (dispatch) => {
 
-    /* The way to “tell” Redux that the state has changed is to create a new object -
-      which will have a new reference. We do that by cloning the old state, and adding
-      our changes on top of the new object */
-    let cartItems = Object.assign(items.slice(), items)
-    let updateCartList
+    let cartItems = items.slice()
     let index = cartItems.indexOf(item)
 
         if (cartItems[index].id === item.id) {
             cartItems.splice(index, 1)
-            updateCartList = {...cartItems, item}
+            cartItems.push(item)
         }
 
-    // console.log(cartItems === items)
-    console.log(updateCartList)
     // store new state of cartItems in the Virtual DOM
-    localStorage.setItem("cartItems", JSON.stringify(updateCartList));
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
     dispatch({
         type: REPLACE_PRODUCT,
         payload: {
-            items: updateCartList,
+            items: cartItems,
             item: item,
         },
     })
