@@ -72,13 +72,13 @@ export const sortSelectedProducts = (items, item) => (dispatch) => {
       our changes on top of the new object */
      //let cartItems = Object.assign(items.slice(), items)
     let cartItems = items.slice()
-    let itemToBeReplaced = cartItems.find((item) => item.id === item.id)
+    let itemToBeReplaced = cartItems.find((itemFound) => itemFound.id === item.id)
     let updateCartList
 
-    // if (itemToBeReplaced.id === item.id) {
+     if (itemToBeReplaced.id === item.id) {
         cartItems.splice(itemToBeReplaced, 1)
         updateCartList = {...cartItems, itemToBeReplaced}
-    //}
+    }
     // console.log(cartItems === items)
     console.log(updateCartList)
     // store new state of cartItems in the Virtual DOM

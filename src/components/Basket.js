@@ -43,7 +43,7 @@ class Basket extends Component {
                                        id={item.title}
                                        name={item.title}
                                        value={item.title}
-                                       onChange={this.handleCheck.bind(this)}
+
                                        onClick={() => this.props.sortSelectedProducts(this.props.cartItems,item)}
                                 />
                                 <label className="productTitleLabel" htmlFor={item.title}>&nbsp;{item.title}
