@@ -33,7 +33,7 @@ class Basket extends Component {
                         {cartItems.map((item) =>
                             <li key={item.id} className="list-unstyled">
                             <div className="form-check">
-                                <button type={"button"} className={"btn btn-outline-warning"} value={"Delete"}
+                                <button type={"button"} className={"btn btn-outline-warning delete"} value={"Delete"}
                                         onClick={() => {this.props.handleTotalRemove(this.props.cartItems, item)}}>
                                         Delete
                                 </button>
@@ -59,7 +59,7 @@ class Basket extends Component {
                         <p className="totalPrice"><span className="glyphicon glyphicon-euro"/>
                            {util.formatCurrency(cartItems.reduce((a, c) => a + c.count * c.price, 0))}
                         </p>
-                        <button className="btn btn-outline-warning" onClick={() =>
+                        <button className="btn btn-outline-warning checkout" onClick={() =>
                             alert("Deze knop is niet geïmplementeerd omdat deze niet binnen het scope van dit project valt, " +
                                 "de aanwezigheid van deze knop hier is slechts esthetisch en figuurlijk.")}>Checkout
                         </button>
