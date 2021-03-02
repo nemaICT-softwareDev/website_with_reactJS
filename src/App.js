@@ -31,13 +31,13 @@ class App extends Component {
          */
         <Provider store={store}>
             <div className="container">
-                <Header />
-                <HLine />
+                    <Header />
+                    <HLine />
               <div className="row">
                 <div className="col-md-8">
                     <Filter />
                     <HLine />
-                  <Products />
+                    <Products />
                 </div>
                 <div className="col-md-4">
                     <Basket />

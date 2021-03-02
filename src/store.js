@@ -10,6 +10,10 @@ if(localStorage.getItem('cartItems')){
 }
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+    /* The center of every Redux application is the store.
+    A "store" is a container that holds your application's global state.
+    A store is a JavaScript object with a few special functions and abilities that make it different than a plain global object*/
 const store = createStore(rootReducer, initialState, composeEnhancer(applyMiddleware(thunk)));
 
 export default store;

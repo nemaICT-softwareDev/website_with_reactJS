@@ -46,7 +46,8 @@ class Filter extends Component {
                         </select>
                     </label>
                 </div>
-            </div>
+              </div>
+
         );
 
     }

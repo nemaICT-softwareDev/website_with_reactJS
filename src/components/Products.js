@@ -36,7 +36,7 @@ class Products extends Component {
                                     className="btn btn-outline-warning"
                                     datatype="minus" data-field=""
                                     onClick={() =>{
-                                    this.props.removeFromCart(this.props.cartItems, product)}}>
+                                    this.props.handleSingleRemove(this.props.cartItems, product)}}>
                                 <span
                                     className="glyphicon glyphicon-minus">
                                 </span>
@@ -65,4 +65,4 @@ const mapStateToProps = (state) => ({
     cartItems: state.cart.items
 });
 // here we use the fetchProducts action and return the new state
-export default connect(mapStateToProps, {fetchProducts, addToCart, removeFromCart: handleSingleRemove })(Products);
+export default connect(mapStateToProps, {fetchProducts, addToCart, handleSingleRemove })(Products);

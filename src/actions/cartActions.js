@@ -1,5 +1,7 @@
 import {ADD_TO_CART, REPLACE_PRODUCT, REMOVE_FROM_CART} from "./types";
 
+// In the following functions we handle user inputs by "dispatching" action objects,
+// which should describe "what happened" in the app
 export const addToCart = (items, product) => (dispatch) => {
     const cartItems = items.slice();
     let productAlreadyInCart = false;
@@ -15,7 +17,10 @@ export const addToCart = (items, product) => (dispatch) => {
         cartItems.push({...product, count: 1 });
     }
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
-    dispatch({ type: ADD_TO_CART, payload: { cartItems } });
+    dispatch({
+        type: ADD_TO_CART,
+        payload: { cartItems }
+    });
 };
 
 export const handleSingleRemove = (items, product) => (dispatch) => {
@@ -60,28 +65,29 @@ export const handleTotalRemove = (items, item) => (dispatch) =>{
     }
 
 
-export const sortSelectedProducts = (items, itemToBeReplaced) => (dispatch) => {
+export const sortSelectedProducts = (items, item) => (dispatch) => {
 
-    /*The way to “tell” Redux that the state has changed is to create a new object -
+    /* The way to “tell” Redux that the state has changed is to create a new object -
       which will have a new reference. We do that by cloning the old state, and adding
-      our changes on top of the new object*/
-    // let cartItems = Object.assign(items.slice(), items, { modalOpen: true })
+      our changes on top of the new object */
+     //let cartItems = Object.assign(items.slice(), items)
     let cartItems = items.slice()
-    let foundItem = cartItems.find((item) => item.id === itemToBeReplaced.id)
-    let itemAddedEndOfList
+    let itemToBeReplaced = cartItems.find((item) => item.id === item.id)
+    let updateCartList
 
-    if (foundItem.id === itemToBeReplaced.id) {
-        cartItems.splice(foundItem, 1)
-        itemAddedEndOfList = {...cartItems, foundItem}
+    if (itemToBeReplaced.id === item.id) {
+        cartItems.splice(itemToBeReplaced, 1)
+        updateCartList = {...cartItems, itemToBeReplaced}
     }
     // console.log(cartItems === items)
-    console.log(itemAddedEndOfList)
-    //localStorage.setItem("cartItems", JSON.stringify(itemAddedEndOfList));
+    console.log(updateCartList)
+    // store new state of cartItems in the Virtual DOM
+    localStorage.setItem("cartItems", JSON.stringify(updateCartList));
     dispatch({
         type: REPLACE_PRODUCT,
         payload: {
-            items: itemAddedEndOfList,
-            item: foundItem,
+            items: updateCartList,
+            item: itemToBeReplaced,
         },
     })
 }
