@@ -19,7 +19,7 @@ class Products extends Component {
                                    <div className={"container-fluid prodDescription"}>
                                        {product.title}
                                    </div>
-                                         <img src={`products/${product.sku}.jpg`} alt={product.title} title={product.description}/>
+                                         <img className={"image"} src={`products/${product.sku}.jpg`} alt={product.title} title={product.description}/>
                                    <div className={"fluid pPrice"}>
                                           <span className="glyphicon glyphicon-euro"/>
                                           &nbsp;{util.formatCurrency(product.price)}

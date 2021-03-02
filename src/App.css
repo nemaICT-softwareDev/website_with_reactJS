@@ -50,15 +50,16 @@ h1.title{
 .prodDescription{
   font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
   /*font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;*/
-  font-size: 110%;
+ /* font-size: 110%; */
+  padding-top: 5px;
+  padding-bottom: 2px;
   position: relative;
   margin-bottom: 2%;
   text-decoration-color: #000000;
   text-align: center;
+  font-weight: bold;
   /*text-shadow:  0 1px 0 #777, 0 -1px 0 #000;*/
   text-transform: uppercase;
-  font-weight: bold;
-  /*text-rendering: optimizeLegibility;*/
 }
 
 .dotFreeList{
@@ -152,14 +153,18 @@ a.links{
 }
 .thumbnail{
   background-color: #efddd4;
-  border-color: #745607;
   box-shadow: 4px 4px 3px #666;
+  border: 1px solid #eab195;
+  border-radius: .75rem;
 }
 .cart{
   background-color: #efddd4;
-  border: 1px solid #745607;
+  border: 1px solid #ffc107;
   box-shadow: 3px 4px 3px #666;
-  margin-top: 1.5em;
+  /*margin-top: 1.5em;*/
+  /*border: 1px solid black;*/
+  padding-top: 1em;
+  border-radius: .75rem;
 
 }
 .glyphicon{
@@ -173,5 +178,22 @@ a.links{
 p.dateFooter{
   color: white;
 }
+.image{
+  /*border: 1px solid #ffc107;*/
+  border-radius: .75rem;
+}
 
+.orderBy, .filterSize{
+  /*background-color: #efddd4;*/
+  border: 1px solid #ffc107;
+}
+
+.checkout{
+  margin-right: .50rem;
+  margin-bottom: .50rem;
+  border-radius: .50rem;
+}
+.delete{
+  border-radius: .50rem;
+}
 
