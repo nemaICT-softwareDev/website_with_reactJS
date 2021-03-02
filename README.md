@@ -1,13 +1,14 @@
-### Deze eerste opdracht was om individueel een boodschappenapplicatie te maken, genaamd BoodschApp. Hier heb ik React, html5, CSS4 en Bootstrap gebruikt.
+### This first assignment was to individually create a shopping application, called BoodschApp. Here I have used ReactJS, html5, CSS4 and Bootstrap.
 
-#### !! Belangrijk, installeer eerst de json-server en voer het uit om vertraging bij het laden van afbeeldingen en foutmeldingen in de browserinspecteur te voorkomen!!
+#### !! Important, please install the json server first and run it to avoid image loading delay and browser inspector error messages !!
 
 
 1) go to terminal 
-2) run:   **cd boodschap_app**
-3) run:  **npm install -g json-server**
-4) run: **npx json-server --watch public/db.json**
+2) execute:   **cd boodschap_app**
+3) execute:  **npm install -g json-server**
+4) execute: **npx json-server --watch public/db.json**
 5) check   http://localhost:3000/products
-6) In a new terminal execute **npm start**
+6) In a new terminal execute **cd boodschap_app**   
+7) once in the boodschap_app run **npm start**
 
-Open http://localhost:3000 to view app in the browser.
+Open http://localhost:4000 to view app in the browser.
