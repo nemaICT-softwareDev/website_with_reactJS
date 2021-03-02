@@ -75,10 +75,10 @@ export const sortSelectedProducts = (items, item) => (dispatch) => {
     let itemToBeReplaced = cartItems.find((item) => item.id === item.id)
     let updateCartList
 
-    if (itemToBeReplaced.id === item.id) {
+    // if (itemToBeReplaced.id === item.id) {
         cartItems.splice(itemToBeReplaced, 1)
         updateCartList = {...cartItems, itemToBeReplaced}
-    }
+    //}
     // console.log(cartItems === items)
     console.log(updateCartList)
     // store new state of cartItems in the Virtual DOM
