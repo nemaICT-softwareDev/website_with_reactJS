@@ -135,12 +135,10 @@ h1.title{
   z-index: 0;
   margin-bottom: 3em;
   color: #2b2b2b;
-
 }
 a.links{
    color: #fcfcfc;
 }
-
 .btn{
   background-color: #46421f;
 }
@@ -194,6 +192,9 @@ p.dateFooter{
   border-radius: .50rem;
 }
 .delete{
+  border-radius: .50rem;
+}
+.pButtons{
   border-radius: .50rem;
 }
 

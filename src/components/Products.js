@@ -27,7 +27,7 @@ class Products extends Component {
                                </a><hr/>
                         <div className="btn-group btn-group-md btn-group-justified">
                             <button type="button"
-                                    className="btn btn-outline-warning"
+                                    className="btn btn-outline-warning pButtons"
                                     onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>Add&nbsp;
                                <span
                                    className="glyphicon glyphicon-shopping-cart"></span>
@@ -41,7 +41,7 @@ class Products extends Component {
                                     className="glyphicon glyphicon-minus">
                                 </span>
                             </button>
-                            <button type="button" className="btn btn-outline-warning"
+                            <button type="button" className="btn btn-outline-warning pButtons"
                                         datatype="plus" data-field=""
                                         onClick={() => {this.props.addToCart(this.props.cartItems, product)}}>
                                  <span
