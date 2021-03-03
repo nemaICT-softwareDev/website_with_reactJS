@@ -47,7 +47,7 @@ class Basket extends Component {
                                 />
                                 <label className="productTitleLabel" htmlFor={item.title}>&nbsp;{item.title}
                                     <span className="priceXProduct">
-                                        {item.count + " X " + util.formatCurrency(item.price)}
+                                        {item.count + "x " + util.formatCurrency(item.price)}
                                     </span>&nbsp;
                                 </label>
                             </div>
@@ -55,9 +55,7 @@ class Basket extends Component {
                     </ul>
                     <div className="text-right">
                         <hr/>
-                        <p className="totalPrice"><span className="glyphicon glyphicon-euro"/>
-                           {util.formatCurrency(cartItems.reduce((a, c) => a + c.count * c.price, 0))}
-                        </p>
+                        <p className="totalPrice">{util.formatCurrency(cartItems.reduce((a, c) => a + c.count * c.price, 0))}</p>
                         <button className="btn btn-outline-warning checkout" onClick={() =>
                             alert("Deze knop is niet geïmplementeerd omdat deze niet binnen het scope van dit project valt, " +
                                 "de aanwezigheid van deze knop hier is slechts esthetisch en figuurlijk.")}>Checkout

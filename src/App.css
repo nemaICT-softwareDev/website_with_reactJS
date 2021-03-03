@@ -40,11 +40,11 @@
 
 h1.title{
   font-family: "Gill Sans Nova Cond Ultra Bold", "Algerian", "serif";
-  color: white;
+  color: #fbe53d;
 }
 .subTitle{
   font-family: "Gill Sans Nova Cond Ultra Bold", "Font Awesome\ 5 Free", "fantasy";
-  color: white;
+  color: #fbe53d;
 }
 
 .prodDescription{
@@ -147,16 +147,16 @@ a.links{
   text-align: center;
   margin-top: 6%;
   color: black;
-  text-shadow: -4px 3px 3px #BBB;
+  text-shadow: -2px 2px 2px #BBB;
 }
 .thumbnail{
-  background-color: #fef2b5;
+  background-color: #faf4d2;
   box-shadow: 4px 4px 3px #666;
   border: 1px solid #eab195;
   border-radius: .75rem;
 }
 .cart{
-  background-color: #fef2b5;
+  background-color: #faf4d2;
   border: 1px solid #ffc107;
   box-shadow: 3px 4px 3px #666;
   /*margin-top: 1.5em;*/

@@ -23,7 +23,7 @@
     {
       "id": 3,
       "sku": 4584330960720,
-      "title": "FicusCarica",
+      "title": "Figo",
       "description": "An Asian species of flowering plant in the mulberry family, known as the common fig",
       "availableSizes": ["X", "M", "L"],
       "price": 170.9,
@@ -73,7 +73,7 @@
     {
       "id": 8,
       "sku": 3454504960720,
-      "title": "Jammi'n!!",
+      "title": "Amoras",
       "description": "The raspberry is the edible fruit of a multitude of plant species in the genus Rubus of the rose family",
       "availableSizes": ["XL"],
       "price": 180.7,
@@ -82,7 +82,7 @@
     {
       "id": 9,
       "sku": 5360265960720,
-      "title": "MonCherrie!",
+      "title": "Cherrie's",
       "description": "The meanings embodied by cherries have varied through history, and the fruit and its blossoms hold different meanings in societies around the world",
       "availableSizes": ["L", "XL"],
       "price": 321.3,
