@@ -6,8 +6,7 @@ class Header extends React.Component {
     render() {
         return (
             <Jumbotron className= "alert-info container-fluid header">
-                    <h1 className="text-center title">Boodschap App</h1>
-                    <h5 className="pull-left subTitle">Individueele opdracht - Nemilson Lopes</h5>
+              <h1 className="text-center title">Boodschap App</h1>
             </Jumbotron>
         );
     }
