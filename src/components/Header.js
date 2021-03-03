@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Jumbotron} from "react-bootstrap";
+import {Jumbotron} from "react-bootstrap";
 
 
 class Header extends React.Component {

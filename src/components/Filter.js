@@ -11,7 +11,7 @@ class Filter extends Component {
                     {this.props.filteredProducts.length} products found.
                 </div>
                 <div className="col-md-4">
-                    <label className={"sorting"}> Order by
+                    <label className={"sorting"}> Order by Price
                         <select
                             className="form-control orderBy"
                             value={this.props.sort}
@@ -29,7 +29,7 @@ class Filter extends Component {
                     </label>
                 </div>
                 <div className="col-md-4">
-                    <label className={"sorting"}> Filter size
+                    <label className={"sorting"}> Filter by Type
                         <select className="form-control filterSize" value={this.props.size}
                             onChange={(e) => {
                             this.props.filterProducts(
@@ -37,12 +37,10 @@ class Filter extends Component {
                             e.target.value);
                             }}>
                             <option value="">ALL</option>
-                            <option value="x">XS</option>
-                            <option value="s">S</option>
-                            <option value="m">M</option>
-                            <option value="l">L</option>
-                            <option value="xl">XL</option>
-                            <option value="xxl">XXL</option>
+                            <option value="n">Nuts</option>
+                            <option value="f">flowers</option>
+                            <option value="b">Berries</option>
+                            <option value="e">Exotic</option>
                         </select>
                     </label>
                 </div>

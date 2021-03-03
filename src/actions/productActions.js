@@ -1,6 +1,6 @@
 import {
     FETCH_PRODUCTS,
-    FILTER_PRODUCTS_BY_SIZE,
+    FILTER_PRODUCTS_BY_TYPE,
     ORDER_PRODUCTS_BY_PRICE,
 } from "./types";
 
@@ -17,13 +17,13 @@ export const fetchProducts = () => (dispatch) => {
             dispatch({ type: FETCH_PRODUCTS, payload: data });
         });
 };
-// this function wilt filter the products list by the size its product
-export const filterProducts = (products, size) => (dispatch) => {
+// this function wilt filter the products list by the type its product
+export const filterProducts = (products, type) => (dispatch) => {
     return dispatch({
-        type:FILTER_PRODUCTS_BY_SIZE,
+        type:FILTER_PRODUCTS_BY_TYPE,
         payload:{
-            items:size === '' ? products
-                              : products.filter(a => a.availableSizes.indexOf(size.toUpperCase()) >= 0),
+            items:type === '' ? products
+                              : products.filter(a => a.availableTypes.indexOf(type.toUpperCase()) >= 0),
         },
     });
 };

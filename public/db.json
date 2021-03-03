@@ -5,7 +5,7 @@
       "sku": 3700512960720,
       "title": "Oaknut",
       "description": "As an insult the most literal English translation for eikel would be 'dickhead, The word acorn (earlier akerne, and acharn) is related to the Gothic name akran, which had the sense of \"fruit of the unenclosed land\".",
-      "availableSizes": ["S","X", "XXL"],
+      "availableTypes": ["N"],
       "price": 236.7,
       "isFreeShipping": true
     },
@@ -13,9 +13,9 @@
     {
       "id": 2,
       "sku": 1496075960720,
-      "title": "Berries",
+      "title": "Currants",
       "description": "botanical terminology, a berry is a simple fruit with seeds and pulp produced from the ovary of a single flower. It is fleshy throughout, except for the seeds!",
-      "availableSizes": ["X", "M", "L"],
+      "availableTypes": ["B"],
       "price": 500.9,
       "isFreeShipping": true
     },
@@ -25,7 +25,7 @@
       "sku": 4584330960720,
       "title": "Figo",
       "description": "An Asian species of flowering plant in the mulberry family, known as the common fig",
-      "availableSizes": ["X", "M", "L"],
+      "availableTypes": ["E", "F"],
       "price": 170.9,
       "isFreeShipping": true
     },
@@ -35,7 +35,7 @@
       "sku": 3699126960720,
       "title": "Ixocarpa",
       "description": "Physalis plant flower",
-      "availableSizes": ["XXL"],
+      "availableTypes": ["F", "E"],
       "price": 59.9,
       "isFreeShipping": false
     },
@@ -45,7 +45,7 @@
       "sku": 3550733960720,
       "title": "Nebbiolo",
       "description": "A grape is a fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis",
-      "availableSizes": ["L", "XL"],
+      "availableTypes": ["F"],
       "price": 100.8,
       "isFreeShipping": false
     },
@@ -55,7 +55,7 @@
       "sku": 1621554960720,
       "title": "Sloe",
       "description": "Prunus spinosa, called blackthorn or sloe, is a species of flowering plant in the rose family Rosaceae. It is native to Europe, western Asia, and locally in northwest Africa. It is also locally naturalised in New Zealand, Tasmania and eastern North America. The fruits have been used to make sloe gin in Britain, and the wood used for making walking sticks or the shillelagh by the Irish",
-      "availableSizes": ["XL", "XXL"],
+      "availableTypes": ["F", "B"],
       "price": 250.8,
       "isFreeShipping": false
     },
@@ -65,26 +65,26 @@
       "sku": 3467373960720,
       "title": "Grapes",
       "description": "The main antioxidant subtance in green grape is known as resveratrol. Green grapes contains more antioxidants and chlorophyll more that other variants of grape",
-      "availableSizes": ["S"],
+      "availableTypes": ["F"],
       "price": 310.5,
       "isFreeShipping": true
     },
 
     {
       "id": 8,
-      "sku": 3454504960720,
-      "title": "Framboesas",
-      "description": "The raspberry is the edible fruit of a multitude of plant species in the genus Rubus of the rose family",
-      "availableSizes": ["XL"],
+      "sku": 4586226960720,
+      "title": "chestnut",
+      "description": "The chestnuts are a group of eight or nine species of deciduous trees and shrubs in the genus Castanea, in the beech family Fagaceae. They are native to temperate regions of the Northern Hemisphere. The name also refers to the edible nuts they produce",
+      "availableTypes": ["N"],
       "price": 180.7,
       "isFreeShipping": false
     },
     {
       "id": 9,
-      "sku": 5360265960720,
-      "title": "Cherrie's",
-      "description": "The meanings embodied by cherries have varied through history, and the fruit and its blossoms hold different meanings in societies around the world",
-      "availableSizes": ["L", "XL"],
+      "sku": 633919960720,
+      "title": "Cashew",
+      "description": "The cashew tree is a tropical evergreen tree that produces the cashew seed and the cashew apple pseudofruit. The tree can grow as high as 14 m, but the dwarf cultivars, growing up to 6 m, prove more profitable, with earlier maturity and greater yields",
+      "availableTypes": ["N", "E"],
       "price": 321.3,
       "isFreeShipping": true
     }
