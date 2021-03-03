@@ -3,6 +3,7 @@ import {ADD_TO_CART, REPLACE_PRODUCT, REMOVE_FROM_CART} from "./types";
 // In the following functions we handle user inputs by "dispatching" action objects,
 // which should describe "what happened" in the app
 export const addToCart = (items, product) => (dispatch) => {
+
     const cartItems = items.slice();
     let productAlreadyInCart = false;
 

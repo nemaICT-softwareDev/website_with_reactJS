@@ -150,13 +150,13 @@ a.links{
   text-shadow: -4px 3px 3px #BBB;
 }
 .thumbnail{
-  background-color: #efddd4;
+  background-color: #fef2b5;
   box-shadow: 4px 4px 3px #666;
   border: 1px solid #eab195;
   border-radius: .75rem;
 }
 .cart{
-  background-color: #efddd4;
+  background-color: #fef2b5;
   border: 1px solid #ffc107;
   box-shadow: 3px 4px 3px #666;
   /*margin-top: 1.5em;*/

@@ -4,7 +4,7 @@ import {ADD_TO_CART,
 
     // Create a "reducer" function that determines what the new state
     // should be when something happens in the app
-const initialState = { items:[], updatedList:[], replacedItem: '' }
+const initialState = { items:[], replacedItem: '' }
 export default function(state = initialState, action){
     // Reducers usually look at the type of action that happened
     // to decide how to update the state
@@ -20,7 +20,7 @@ export default function(state = initialState, action){
         case REPLACE_PRODUCT:
               return {
                          ...state,
-                        updatedList: action.payload.items,
+                        items: action.payload.items,
                         replacedItem: action.payload.item,
                     }
         default:

@@ -42,8 +42,7 @@ class Basket extends Component {
                                        type="checkbox"
                                        id={item.title}
                                        name={item.title}
-                                       value={item.title}
-
+                                       onChange={this.handleCheck}
                                        onClick={() => this.props.sortSelectedProducts(this.props.cartItems,item)}
                                 />
                                 <label className="productTitleLabel" htmlFor={item.title}>&nbsp;{item.title}
