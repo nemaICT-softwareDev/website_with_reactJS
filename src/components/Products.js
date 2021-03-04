@@ -41,7 +41,7 @@ class Products extends Component {
         this.props.fetchProducts();
     }
     render() {
-         //Here we use the map to convert the json products file into JSX elements
+         //Here we use the map to convert the json products files into JSX elements
         const productItems = this.props.products.map( (product) => (
                 <div className="col-md-4" key={product.id}>
                      <div style={thumbnailStyle} className="thumbnail">
