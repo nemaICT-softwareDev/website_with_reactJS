@@ -6,7 +6,9 @@ const titleStyle = {
     color: '#fbe53d',
     textAlign: 'center'
 }
-const sutbtitleStyle = {
+const subTitleStyle = {
+    fontFamily: 'Apple Chancery, cursive,  sans-serif',
+    color: 'rgb(222 195 70)',
 
 }
 class Header extends Component {
@@ -14,7 +16,7 @@ class Header extends Component {
         return (
             <Jumbotron className= "alert-info container-fluid header">
               <h1 style={titleStyle}>Boodschap App</h1>
-                <h5>Nemilson Lopes</h5>
+                <h4 style={subTitleStyle}>Nemilson Lopes</h4>
             </Jumbotron>
         );
     }

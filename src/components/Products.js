@@ -17,10 +17,6 @@ const prodDescriptionStyle = {
     textTransform: 'uppercase'
 }
 
-// const pButtonsStyle = {
-//     borderRadius: '.50rem'
-// }
-
 const imageStyle = {
     borderRadius: '.75rem'
 }
@@ -36,7 +32,7 @@ const pPriceStyle = {
 const thumbnailStyle = {
     backgroundColor: '#faf4d2',
     boxShadow: '4px 4px 3px #666',
-    border: '1px solid #eab195',
+    border: '1px solid #6c757d',
     borderRadius: '.75rem'
 }
 
@@ -55,11 +51,11 @@ class Products extends Component {
                                  <div style={pPriceStyle}>{util.formatCurrency(product.price)}</div>
                                </a><hr/>
                         <div className="btn-group btn-group-md btn-group-justified">
-                            <button type="button" className="btn btn-outline-dark glyphicon glyphicon-shopping-cart"
+                            <button type="button" className="btn btn-outline-success glyphicon glyphicon-shopping-cart"
                                     onClick={() => {this.props.addToCart(this.props.cartItems, product)}}/>
-                            <button type="button" className="btn btn-outline-dark glyphicon glyphicon-minus"
+                            <button type="button" className="btn btn-outline-success glyphicon glyphicon-minus"
                                     onClick={() =>{this.props.handleSingleRemove(this.props.cartItems, product)}}/>
-                            <button type="button" className="btn btn-outline-dark glyphicon glyphicon-plus"
+                            <button type="button" className="btn btn-outline-success glyphicon glyphicon-plus"
                                     onClick={() => {this.props.addToCart(this.props.cartItems, product)}}/>
                         </div>
                      </div>
@@ -68,7 +64,6 @@ class Products extends Component {
         )
         return (
             <div className="row">{productItems} <br/></div>
-
         );
     }
 }

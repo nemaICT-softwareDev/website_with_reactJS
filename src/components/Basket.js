@@ -17,11 +17,6 @@ const ulStyle = {
     paddingLeft: '0'
 }
 
-const productTitleLabelStyle = {
-    position: 'relative',
-    float: 'right'
-}
-
 const deleteBtnStyle = {
     borderRadius: '.50rem',
     //backgroundColor: '#46421f'
@@ -30,17 +25,7 @@ const deleteBtnStyle = {
 const checkoutBtnStyle = {
     marginRight: '.50rem',
     marginBottom: '.50rem',
-    borderRadius: '.50rem',
-    // color: '#212529',
-    // backgroundColor: '#46421f'
-}
-
-const priceXProductStyle = {
-    position: 'relative',
-    fontWeight: 'bold',
-    marginRight: '0.9em',
-    float: 'right',
-    alignItems: 'flex-end'
+    borderRadius: '.50rem'
 }
 
 const totalPriceStyle = {
@@ -51,24 +36,13 @@ const totalPriceStyle = {
 
 const cartStyle = {
     backgroundColor: '#faf4d2',
-    border: '1px solid #ffc107',
+    border: '1px solid #6c757d',
     boxShadow: '3px 4px 3px #666',
     paddingTop: '1em',
     borderRadius: '.75rem'
 }
 
-const changeLabelColorStyle = {
-    position: 'relative',
-    float: 'right',
-    textDecorationLine: 'line-through',
-    textDecorationColor: 'black',
-    opacity: '0.6',
-    backgroundColor: 'grey'
-}
-
-
 class Basket extends Component {
-
     handleCheck = (e) => {
           this.setState({[e.target.name]: e.target.checked});
         }
@@ -95,7 +69,7 @@ class Basket extends Component {
                   <ul style={ulStyle}>{cartItems.map((item) =>
                      <li key={item.id} className="list-unstyled">
                        <div className="form-check">
-                           <button style={deleteBtnStyle} type={"button"} className={"btn btn-outline-dark"} value={"Delete"}
+                           <button style={deleteBtnStyle} type={"button"} className={"btn btn-outline-success"} value={"Delete"}
                                    onClick={() => {this.props.handleTotalRemove(this.props.cartItems, item)}}>
                                    Delete
                            </button>&nbsp;&nbsp;&nbsp;
@@ -115,7 +89,7 @@ class Basket extends Component {
                     <div className="text-right">
                         <hr/>
                         <p style={totalPriceStyle}>{util.formatCurrency(cartItems.reduce((a, c) => a + c.count * c.price, 0))}</p>
-                        <button style={checkoutBtnStyle} className="btn btn-outline-dark" onClick={() =>
+                        <button style={checkoutBtnStyle} className="btn btn-outline-secondary" onClick={() =>
                             alert("Deze knop is niet geïmplementeerd omdat deze niet binnen het scope van dit project valt, " +
                                 "de aanwezigheid van deze knop hier is slechts esthetisch en figuurlijk.")}>Checkout
                         </button>

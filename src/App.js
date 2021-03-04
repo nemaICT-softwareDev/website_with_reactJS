@@ -39,7 +39,7 @@ class App extends Component {
                     <HLine />
                     <Products />
                 </div>
-                <div className="col-md-4 shoppingCart">
+                <div className="col-md-4">
                     <Basket />
                 </div>
               </div>

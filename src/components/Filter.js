@@ -3,7 +3,11 @@ import { connect } from 'react-redux';
 import { filterProducts, sortProducts } from "../actions/productActions";
 
 const selectElStyle = {
-    border: '1px solid black'
+    border: '1px solid #6c757d'
+}
+
+const labelStyle = {
+    color: '#6c757d'
 }
 class Filter extends Component {
     render() {
@@ -14,7 +18,7 @@ class Filter extends Component {
                     {this.props.filteredProducts.length} products found.
                 </div>
                 <div className="col-md-4">
-                    <label className={"sorting"}> Order by Price
+                    <label style={labelStyle}> Order by Price
                         <select style={selectElStyle}
                             className="form-control"
                             value={this.props.sort}
@@ -32,7 +36,7 @@ class Filter extends Component {
                     </label>
                 </div>
                 <div className="col-md-4">
-                    <label className={"sorting"}> Filter by Type
+                    <label style={labelStyle}> Filter by Type
                         <select style={selectElStyle} className="form-control" value={this.props.size}
                             onChange={(e) => {
                             this.props.filterProducts(
