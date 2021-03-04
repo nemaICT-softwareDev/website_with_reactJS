@@ -8,9 +8,9 @@ const titleStyle = {
 }
 const subTitleStyle = {
     fontFamily: 'Apple Chancery, cursive,  sans-serif',
-    color: 'rgb(222 195 70)',
-
+    color: 'rgb(222 195 70)'
 }
+
 class Header extends Component {
     render() {
         return (

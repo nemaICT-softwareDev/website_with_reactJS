@@ -6,8 +6,7 @@ const initialState = { items:[], filteredItems:[], type: '', sort: '' };
 export default function(state = initialState,action){
     switch(action.type){
         case FETCH_PRODUCTS:
-            // fill in the items array with the list of products from the json api
-            // and return the new state
+            // fill in the items array with the list of products from the db.json api
             return{
                     ...state,
                     items: action.payload,

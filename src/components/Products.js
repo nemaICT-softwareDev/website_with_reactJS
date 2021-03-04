@@ -72,5 +72,5 @@ const mapStateToProps = (state) => ({
     products: state.products.filteredItems,
     cartItems: state.cart.items
 });
-                                                        // here we use the fetchProducts action and return the new browser state
+
 export default connect(mapStateToProps, {fetchProducts, addToCart, handleSingleRemove })(Products);
