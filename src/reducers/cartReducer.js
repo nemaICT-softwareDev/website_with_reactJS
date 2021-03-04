@@ -1,5 +1,5 @@
 import {ADD_TO_CART,
-       REPLACE_PRODUCT,
+       PLACE_PRODUCT_AT_END_OF_LIST,
        REMOVE_FROM_CART} from "../actions/types";
 
     // Create a "reducer" function that determines what the new state
@@ -17,7 +17,7 @@ export default function(state = initialState, action){
             return {
                 items: action.payload.cartItems
             }
-        case REPLACE_PRODUCT:
+        case PLACE_PRODUCT_AT_END_OF_LIST:
               return {
                          ...state,
                         items: action.payload.items,

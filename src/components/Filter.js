@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { filterProducts, sortProducts } from "../actions/productActions";
 
+const selectElStyle = {
+    border: '1px solid black'
+}
 class Filter extends Component {
     render() {
         return (
@@ -12,8 +15,8 @@ class Filter extends Component {
                 </div>
                 <div className="col-md-4">
                     <label className={"sorting"}> Order by Price
-                        <select
-                            className="form-control orderBy"
+                        <select style={selectElStyle}
+                            className="form-control"
                             value={this.props.sort}
                             onChange={(e) => {
                                 this.props.sortProducts(
@@ -30,7 +33,7 @@ class Filter extends Component {
                 </div>
                 <div className="col-md-4">
                     <label className={"sorting"}> Filter by Type
-                        <select className="form-control filterSize" value={this.props.size}
+                        <select style={selectElStyle} className="form-control" value={this.props.size}
                             onChange={(e) => {
                             this.props.filterProducts(
                             this.props.products,

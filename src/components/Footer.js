@@ -1,12 +1,23 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
+const footerStyle = {
+    backgroundImage: `url("../bckGrnImg/2895335960720.jpg")`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center center',
+    backgroundAttachment: 'fixed',
+    backgroundSize: 'cover',
+    backgroundColor: '#464646',
+    zIndex: '0',
+    marginBottom: '3em',
+    color: '#2b2b2b'
+}
 
 class Footer extends React.Component {
     render() {
         return (
-             <MDBFooter color="blue" className="font-small pt-4 mt-4 footer">
-                <MDBContainer className="text-center text-md-left">
+             <MDBFooter color="blue" className="font-small pt-4 mt-4 footer" >
+                <MDBContainer  className="text-center text-md-left">
                     <MDBRow>
                         <MDBCol md="6">
                                 <blockquote className={"descriptionQuote"}>"Don't ever mistake my silence for ignorance,

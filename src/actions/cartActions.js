@@ -1,4 +1,4 @@
-import {ADD_TO_CART, REPLACE_PRODUCT, REMOVE_FROM_CART} from "./types";
+import {ADD_TO_CART, PLACE_PRODUCT_AT_END_OF_LIST, REMOVE_FROM_CART} from "./types";
 
 // In the following functions we handle user inputs by "dispatching" action objects,
 // which should describe "what happened" in the app
@@ -78,7 +78,7 @@ export const sortSelectedProducts = (items, item) => (dispatch) => {
     // store new state of cartItems in the Virtual DOM
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     dispatch({
-        type: REPLACE_PRODUCT,
+        type: PLACE_PRODUCT_AT_END_OF_LIST,
         payload: {
             items: cartItems,
             item: item,

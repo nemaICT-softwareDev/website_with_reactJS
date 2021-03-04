@@ -37,48 +37,10 @@
   }
 }
 
-
-h1.title{
-  font-family: "Gill Sans Nova Cond Ultra Bold", "Algerian", "serif";
-  color: #fbe53d;
-}
-.subTitle{
-  font-family: "Gill Sans Nova Cond Ultra Bold", "Font Awesome\ 5 Free", "fantasy";
-  color: #fbe53d;
-}
-
-.prodDescription{
-  font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
-  /*font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;*/
- /* font-size: 110%; */
-  padding-top: 5px;
-  padding-bottom: 2px;
-  position: relative;
-  margin-bottom: 2%;
-  text-decoration-color: #000000;
-  text-align: center;
-  font-weight: bold;
-  /*text-shadow:  0 1px 0 #777, 0 -1px 0 #000;*/
-  text-transform: uppercase;
-}
-
-.dotFreeList{
-  padding-left: 0;
-}
-
-.welcomeMsgBasket, .infoBasket{
-  font-size: 1.25em;
-}
-.userBasketInfo, .basketEmptyMsg{
-  padding-top: 6px;
-  margin-left: 4%;
-}
-
 .productTitleLabel{
-  /*padding-right: 1%;*/
   position: relative;
   float: right;
-
+  padding-right: 0.935rem;
 }
 .productTitle:checked + .productTitleLabel{
   /*color: grey;*/
@@ -87,12 +49,13 @@ h1.title{
   opacity: 0.6;
   /*filter: alpha(opacity=60); !* msie *!*/
   background-color: grey;
-
 }
+
 .descriptionQuote, .descriptionLinks, .links{
   color: #fffefc;
   position: relative;
 }
+
 .descriptionLinks, .descriptionQuote{
   font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
   font-size: 1.5em;
@@ -100,20 +63,21 @@ h1.title{
   font-weight: bold;
 }
 
-.totalPrice{
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-right: 0.6em;
-}
+/*.totalPrice{*/
+/*  font-size: 1.5em;*/
+/*  font-weight: bold;*/
+/*  margin-right: 0.6em;*/
+/*}*/
 
-.priceXProduct{
-  position: relative;
-  font-weight: bold;
-  margin-right: 0.9em;
-  float: right;
-  align-items: flex-end;
+/*.priceXProduct{*/
+/*  position: relative;*/
+/*  font-weight: bold;*/
+/*  margin-right: 0.9em;*/
+/*  float: right;*/
+/*  align-items: flex-end;*/
 
-}
+/*}*/
+
 .header{
   margin-top: 3em;
   background-image: url("./bckGrnImg/3698073960720.jpg");
@@ -136,38 +100,40 @@ h1.title{
   margin-bottom: 3em;
   color: #2b2b2b;
 }
+
 a.links{
    color: #fcfcfc;
 }
-.btn{
-  background-color: #46421f;
-}
-.pPrice{
-  font-size: 1.5em;
-  text-align: center;
-  margin-top: 6%;
-  color: black;
-  text-shadow: -2px 2px 2px #BBB;
-}
-.thumbnail{
-  background-color: #faf4d2;
-  box-shadow: 4px 4px 3px #666;
-  border: 1px solid #eab195;
-  border-radius: .75rem;
-}
-.cart{
-  background-color: #faf4d2;
-  border: 1px solid #ffc107;
-  box-shadow: 3px 4px 3px #666;
-  /*margin-top: 1.5em;*/
-  /*border: 1px solid black;*/
-  padding-top: 1em;
-  border-radius: .75rem;
 
-}
-.glyphicon{
-  position: relative;
-}
+/*.pPrice{*/
+/*  font-size: 1.5em;*/
+/*  text-align: center;*/
+/*  margin-top: 6%;*/
+/*  color: black;*/
+/*  text-shadow: -2px 2px 2px #BBB;*/
+/*}*/
+
+/*.thumbnail{*/
+/*  background-color: #faf4d2;*/
+/*  box-shadow: 4px 4px 3px #666;*/
+/*  border: 1px solid #eab195;*/
+/*  border-radius: .75rem;*/
+/*}*/
+
+/*.cart{*/
+/*  background-color: #faf4d2;*/
+/*  border: 1px solid #ffc107;*/
+/*  box-shadow: 3px 4px 3px #666;*/
+/*  !*margin-top: 1.5em;*!*/
+/*  !*border: 1px solid black;*!*/
+/*  padding-top: 1em;*/
+/*  border-radius: .75rem;*/
+
+/*}*/
+
+/*.glyphicon{*/
+/*  position: relative;*/
+/*}*/
 
 .form-group-sm{
   padding-left: 2%;
@@ -176,26 +142,27 @@ a.links{
 p.dateFooter{
   color: white;
 }
-.image{
-  /*border: 1px solid #ffc107;*/
-  border-radius: .75rem;
-}
+/*.image{*/
+/*  !*border: 1px solid #ffc107;*!*/
+/*  border-radius: .75rem;*/
+/*}*/
 
-.orderBy, .filterSize{
-  /*background-color: #efddd4;*/
-  border: 1px solid #ffc107;
-}
+/*.orderBy, .filterSize{*/
+/*  !*background-color: #efddd4;*!*/
+/*  border: 1px solid #ffc107;*/
+/*}*/
 
-.checkout{
-  margin-right: .50rem;
-  margin-bottom: .50rem;
-  border-radius: .50rem;
-}
-.delete{
-  border-radius: .50rem;
-}
-.pButtons{
-  border-radius: .50rem;
-}
+/*.checkout{*/
+/*  margin-right: .50rem;*/
+/*  margin-bottom: .50rem;*/
+/*  border-radius: .50rem;*/
+/*}*/
+/*.delete{*/
+/*  border-radius: .50rem;*/
+/*}*/
+
+/*.pButtons{*/
+/*  border-radius: .50rem;*/
+/*}*/
 
 
