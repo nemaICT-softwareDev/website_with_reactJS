@@ -51,7 +51,7 @@
     {
       "id": 7,
       "sku": 908989960720,
-      "title": "Grapes",
+      "title": "jigger",
       "url": "https://pbskids.org/catinthehat/games/spina-ma-jigger",
       "genre": ["M"]
     },
@@ -59,21 +59,21 @@
     {
       "id": 8,
       "sku": 4586226960720,
-      "title": "chestnut",
+      "title": "rail rally",
       "url": "https://pbskids.org/dinosaurtrain/games/railrally.html",
       "genre": ["P"]
     },
     {
       "id": 9,
       "sku": 633919960720,
-      "title": "Cashew",
+      "title": "dinosaur",
       "url": "https://pbskids.org/dinosaurtrain/games/openingceremony.html",
       "genre": ["M"]
     },
     {
       "id": 10,
       "sku": 113132131133,
-      "title": "chestnut",
+      "title": "astro",
       "url": "https://pbskids.org/readyjetgo/games/sydneys-astro-tracker",
       "genre": ["E"]
     },

@@ -1,52 +1,42 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
-const footerStyle = {
-    backgroundImage: `url("../bckGrnImg/2895335960720.jpg")`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center center',
-    backgroundAttachment: 'fixed',
-    backgroundSize: 'cover',
-    backgroundColor: '#464646',
-    zIndex: '0',
-    marginBottom: '3em',
-    color: '#2b2b2b'
-}
-
 class Footer extends React.Component {
     render() {
         return (
-             <MDBFooter color="blue" className="font-small pt-4 mt-4 footer" >
-                <MDBContainer  className="text-center text-md-left">
+            <MDBFooter color="blue" className="font-small pt-4 mt-4">
+                <MDBContainer fluid className="text-center text-md-left">
                     <MDBRow>
                         <MDBCol md="6">
-                                <blockquote className={"urlQuote"}>"Don't ever mistake my silence for ignorance,
-                                    my calmness for acceptance or my kindness for weakness.
-                                    Compassion and tolerance are not a sign of weakness, but a sign of strength."</blockquote>
+                            <h5 className="title"> Time for fun</h5>
+                            <p>
+                                Educational games are games explicitly designed with educational purposes,
+                                or which have incidental or secondary educational value. All types of games
+                                may be used in an educational environment, however educational games are
+                                games that are designed to help people learn about certain subjects,
+                                expand concepts, reinforce development, understand a historical event or culture,
+                                or assist them in learning a skill as they play
+                            </p>
                         </MDBCol>
-                        <MDBCol md="4" className={"pull-right"}>
-                            <h5 className="urlLinks">Interessante Links</h5>
+                        <MDBCol md="6">
+                            <h5 className="title">Links</h5>
                             <ul>
-                                <li className="list-unstyled ">
-                                    <a className={"links"} href="https://reactjs.org/docs/introducing-jsx.html">React</a>
+                                <li className="list-unstyled">
+                                    <a href="https://www.education.com/games/">Educational Games for Kids</a>
                                 </li>
-                                <li className="list-unstyled links">
-                                    <a className={"links"} href="https://tutorials.freshersnow.com/?s=header+reactJs">Freshers Now</a>
+                                <li className="list-unstyled">
+                                    <a href="https://www.ducksters.com/games/">Educational Games</a>
                                 </li>
-                                <li className="list-unstyled links">
-                                    <a className={"links"} href="https://bootstrapcreative.com/resources/bootstrap-4-css-classes-index/">Bootstrap
-                                        Creative</a>
+                                <li className="list-unstyled">
+                                    <a href="https://www.funbrain.com/">FunBrain</a>
                                 </li>
-                                <li className="list-unstyled links">
-                                    <a className={"links"} href="https://reactor-js.com/">Reactor JS</a>
-                                </li>
-                            </ul>
+                              </ul>
                         </MDBCol>
                     </MDBRow>
                 </MDBContainer>
                 <div className="footer-copyright text-center py-3">
-                    <MDBContainer>
-                       <p className={"dateFooter"}> &copy; {new Date().getFullYear()} <a href="#">Webmaster</a></p>
+                    <MDBContainer fluid>
+                        &copy; {new Date().getFullYear()} Copyright: <a href="#"> webmaster </a>
                     </MDBContainer>
                 </div>
             </MDBFooter>

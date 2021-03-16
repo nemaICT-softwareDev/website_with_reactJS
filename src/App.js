@@ -4,9 +4,10 @@ import Games from "./components/Games";
 import Filter from "./components/Filter";
 import store from "./store";
 import "./App.css";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer";
 import HLine from "./components/HLine";
+
 
 const picsStyle = {
     paddingLeft: '0.625rem',
@@ -34,6 +35,7 @@ class App extends Component {
         <Provider store={store}>
             <div className="container">
                     <Header />
+
                     <HLine />
               <div style={picsStyle} className="row">
                   <div>

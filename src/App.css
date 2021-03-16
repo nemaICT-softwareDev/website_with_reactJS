@@ -37,95 +37,41 @@
   }
 }
 
-/*.pPrice{*/
-/*  font-size: 1.5em;*/
-/*  text-align: center;*/
-/*  margin-top: 6%;*/
-/*  color: black;*/
-/*  text-shadow: -2px 2px 2px #BBB;*/
-/*}*/
-
-/*.thumbnail{*/
-/*  background-color: #faf4d2;*/
-/*  box-shadow: 4px 4px 3px #666;*/
-/*  border: 1px solid #eab195;*/
-/*  border-radius: .75rem;*/
-/*}*/
-
-/*.cart{*/
-/*  background-color: #faf4d2;*/
-/*  border: 1px solid #ffc107;*/
-/*  box-shadow: 3px 4px 3px #666;*/
-/*  !*margin-top: 1.5em;*!*/
-/*  !*border: 1px solid black;*!*/
-/*  padding-top: 1em;*/
-/*  border-radius: .75rem;*/
-
-/*}*/
-
-/*.glyphicon{*/
-/*  position: relative;*/
-/*}*/
-
-/*.form-group-sm{*/
-/*  padding-left: 2%;*/
-/*}*/
-
-
-/*.image{*/
-/*  !*border: 1px solid #ffc107;*!*/
-/*  border-radius: .75rem;*/
-/*}*/
-
-/*.orderBy, .filterSize{*/
-/*  !*background-color: #efddd4;*!*/
-/*  border: 1px solid #ffc107;*/
-/*}*/
-
-/*.checkout{*/
-/*  margin-right: .50rem;*/
-/*  margin-bottom: .50rem;*/
-/*  border-radius: .50rem;*/
-/*}*/
-/*.delete{*/
-/*  border-radius: .50rem;*/
-/*}*/
-
-/*.pButtons{*/
-/*  border-radius: .50rem;*/
-/*}*/
-/*.totalPrice{*/
-/*  font-size: 1.5em;*/
-/*  font-weight: bold;*/
-/*  margin-right: 0.6em;*/
-/*}*/
-
-/*.priceXProduct{*/
-/*  position: relative;*/
-/*  font-weight: bold;*/
-/*  margin-right: 0.9em;*/
-/*  float: right;*/
-/*  align-items: flex-end;*/
-
-/*}*/
-
-.productTitleLabel{
-  position: relative;
-  float: right;
-  padding-right: 0.935rem;
+.show-nav {
+  /*height: 15.75rem;*/
+  height: auto;
 }
-.productTitle:checked + .productTitleLabel{
-  /*color: grey;*/
-  text-decoration-line: line-through;
-  text-decoration-color: black;
-  opacity: 0.6;
-  /*filter: alpha(opacity=60); !* msie *!*/
-  background-color: grey;
+
+.links {
+  height: 0;
+  overflow: hidden;
+  list-style-type: none;
+  font-weight: bold;
+
 }
+
+
+@media screen and (min-width: 768px) {
+  button {
+    display: none;
+  }
+
+  .links {
+    height: auto;
+    display: flex;
+
+  }
+
+  li {
+    padding: 0 15px;
+  }
+}
+
 
 .urlQuote, .urlLinks, .links{
   color: #fffefc;
   position: relative;
+
 }
 
 .urlLinks, .urlQuote{
@@ -136,7 +82,6 @@
 }
 .header{
   margin-top: 3em;
-  background-image: url("./bckGrnImg/3698073960720.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -146,12 +91,11 @@
   /*opacity: 0.9;*/
 }
 .footer{
-  background-image: url("./bckGrnImg/2895335960720.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #464646;
+  background-color: #070000;
   z-index: 0;
   margin-bottom: 3em;
   color: #2b2b2b;

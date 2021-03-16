@@ -12,7 +12,6 @@ const labelStyle = {
 
 const rowStyle = {
     marginLeft: '5px',
-
 }
 
 class Filter extends Component {
