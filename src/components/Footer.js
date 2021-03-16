@@ -20,12 +20,12 @@ class Footer extends React.Component {
                 <MDBContainer  className="text-center text-md-left">
                     <MDBRow>
                         <MDBCol md="6">
-                                <blockquote className={"descriptionQuote"}>"Don't ever mistake my silence for ignorance,
+                                <blockquote className={"urlQuote"}>"Don't ever mistake my silence for ignorance,
                                     my calmness for acceptance or my kindness for weakness.
                                     Compassion and tolerance are not a sign of weakness, but a sign of strength."</blockquote>
                         </MDBCol>
                         <MDBCol md="4" className={"pull-right"}>
-                            <h5 className="descriptionLinks">Interessante Links</h5>
+                            <h5 className="urlLinks">Interessante Links</h5>
                             <ul>
                                 <li className="list-unstyled ">
                                     <a className={"links"} href="https://reactjs.org/docs/introducing-jsx.html">React</a>

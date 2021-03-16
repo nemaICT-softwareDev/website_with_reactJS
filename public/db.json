@@ -1,92 +1,123 @@
 {
-  "products": [
+  "games": [
     {
       "id": 1,
       "sku": 3700512960720,
-      "title": "Oaknut",
-      "description": "As an insult the most literal English translation for eikel would be 'dickhead, The word acorn (earlier akerne, and acharn) is related to the Gothic name akran, which had the sense of \"fruit of the unenclosed land\".",
-      "availableTypes": ["N"],
-      "price": 236.7,
-      "isFreeShipping": true
+      "title": "Amazing",
+      "url": "https://pbskids.org/wildkratts/games/amazin-amazon",
+      "genre": ["N"]
     },
 
     {
       "id": 2,
       "sku": 2754189960720,
-      "title": "Currants",
-      "description": "botanical terminology, a berry is a simple fruit with seeds and pulp produced from the ovary of a single flower. It is fleshy throughout, except for the seeds!",
-      "availableTypes": ["B"],
-      "price": 500.9,
-      "isFreeShipping": true
+      "title": "Creator",
+      "url": "https://pbskids.org/ruff/games/cookie-creator",
+      "genre": ["N"]
     },
 
     {
       "id": 3,
       "sku": 4584330960720,
-      "title": "Figo",
-      "description": "An Asian species of flowering plant in the mulberry family, known as the common fig",
-      "availableTypes": ["E", "F"],
-      "price": 170.9,
-      "isFreeShipping": true
+      "title": "Painters",
+      "url": "https://pbskids.org/ruff/games/power-painters",
+      "genre": ["E", "F"]
     },
 
     {
       "id": 4,
       "sku": 3699126960720,
-      "title": "Ixocarpa",
-      "description": "Physalis plant flower",
-      "availableTypes": ["F", "E"],
-      "price": 59.9,
-      "isFreeShipping": false
+      "title": "Molly",
+      "url": "https://pbskids.org/molly/games/",
+      "genre": ["P"]
     },
 
     {
       "id": 5,
       "sku": 3550733960720,
-      "title": "Nebbiolo",
-      "description": "A grape is a fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis",
-      "availableTypes": ["F"],
-      "price": 100.8,
-      "isFreeShipping": false
+      "title": "Space Lab",
+      "url": "https://pbskids.org/readyjetgo/games/rjg-space-scouts-lab",
+      "genre": ["E"]
     },
 
     {
       "id": 6,
       "sku": 1621554960720,
-      "title": "Sloe",
-      "description": "Prunus spinosa, called blackthorn or sloe, is a species of flowering plant in the rose family Rosaceae. It is native to Europe, western Asia, and locally in northwest Africa. It is also locally naturalised in New Zealand, Tasmania and eastern North America. The fruits have been used to make sloe gin in Britain, and the wood used for making walking sticks or the shillelagh by the Irish",
-      "availableTypes": ["F", "B"],
-      "price": 250.8,
-      "isFreeShipping": false
+      "title": "Buble Math",
+      "url": "https://pbskids.org/peg/games/bubble-bath",
+      "genre": ["M"]
     },
 
     {
       "id": 7,
       "sku": 908989960720,
       "title": "Grapes",
-      "description": "The main antioxidant subtance in green grape is known as resveratrol. Green grapes contains more antioxidants and chlorophyll more that other variants of grape",
-      "availableTypes": ["F"],
-      "price": 310.5,
-      "isFreeShipping": true
+      "url": "https://pbskids.org/catinthehat/games/spina-ma-jigger",
+      "genre": ["M"]
     },
 
     {
       "id": 8,
       "sku": 4586226960720,
       "title": "chestnut",
-      "description": "The chestnuts are a group of eight or nine species of deciduous trees and shrubs in the genus Castanea, in the beech family Fagaceae. They are native to temperate regions of the Northern Hemisphere. The name also refers to the edible nuts they produce",
-      "availableTypes": ["N"],
-      "price": 180.7,
-      "isFreeShipping": false
+      "url": "https://pbskids.org/dinosaurtrain/games/railrally.html",
+      "genre": ["P"]
     },
     {
       "id": 9,
       "sku": 633919960720,
       "title": "Cashew",
-      "description": "The cashew tree is a tropical evergreen tree that produces the cashew seed and the cashew apple pseudofruit. The tree can grow as high as 14 m, but the dwarf cultivars, growing up to 6 m, prove more profitable, with earlier maturity and greater yields",
-      "availableTypes": ["N", "E"],
-      "price": 321.3,
-      "isFreeShipping": true
+      "url": "https://pbskids.org/dinosaurtrain/games/openingceremony.html",
+      "genre": ["M"]
+    },
+    {
+      "id": 10,
+      "sku": 113132131133,
+      "title": "chestnut",
+      "url": "https://pbskids.org/readyjetgo/games/sydneys-astro-tracker",
+      "genre": ["E"]
+    },
+    {
+      "id": 11,
+      "sku": 546464646546,
+      "title": "Invention",
+      "url": "https://pbskids.org/readyjetgo/games/sydneys-astro-tracker",
+      "genre": ["E"]
+    },
+    {
+      "id": 12,
+      "sku": 546581331465,
+      "title": "Fun",
+      "url": "https://pbskids.org/sesame/games/story-book-builder/",
+      "genre": ["F"]
+    },
+    {
+      "id": 13,
+      "sku": 51598785134,
+      "title": "History Fun",
+      "url": "https://pbskids.org/arthur/games/family-history-fun#/",
+      "genre": ["F"]
+    },
+    {
+      "id": 14,
+      "sku": 845125478,
+      "title": "Rhyme",
+      "url": "https://pbskids.org/superwhy/games/wonder-reds-rhyme-racer/index.html",
+      "genre": ["R"]
+    },
+    {
+      "id": 15,
+      "sku": 8542145879,
+      "title": "Surprise",
+      "url": "https://pbskids.org/sid/games/weather-surprise",
+      "genre": ["C"]
+    },
+    {
+      "id": 16,
+      "sku": 963258456325,
+      "title": "Discovery",
+      "url": "https://pbskids.org/catinthehat/games/slidea-ma-zoo",
+      "genre": ["C"]
     }
   ]
 }

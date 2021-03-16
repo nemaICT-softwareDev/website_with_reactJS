@@ -1,20 +1,22 @@
 import React, { Component } from "react";
 import { Provider } from "react-redux";
-import Products from "./components/Products";
+import Games from "./components/Games";
 import Filter from "./components/Filter";
-import Basket from "./components/Basket";
 import store from "./store";
 import "./App.css";
-//import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HLine from "./components/HLine";
 
+const picsStyle = {
+    paddingLeft: '0.625rem',
+    paddingRight: '0.625rem'
+}
 
 class App extends Component {
     componentDidMount() {
         /**
-         * Here we fetch the json API server to get the list of products
+         * Here we fetch the json API server to get the list of pics
          * Check if is there any file in the localStore from previous session to be reloaded in the choppingCart
          */
         if(localStorage.getItem("cartItems")){
@@ -33,16 +35,14 @@ class App extends Component {
             <div className="container">
                     <Header />
                     <HLine />
-              <div className="row">
-                <div className="col-md-8">
-                    <Filter />
-                    <HLine />
-                    <Products />
-                </div>
-                <div className="col-md-4">
-                    <Basket />
-                </div>
+              <div style={picsStyle} className="row">
+                  <div>
+                        <Filter />
+                        <HLine />
+                        <Games />
+                  </div>
               </div>
+                <HLine />
                 <Footer />
             </div>
         </Provider>

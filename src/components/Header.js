@@ -1,23 +1,48 @@
 import React, { Component } from "react";
-import {Jumbotron} from "react-bootstrap";
 
-const titleStyle = {
-    fontFamily: 'Gill Sans Nova Cond Ultra Bold, Algerian, serif',
-    color: '#fbe53d',
-    textAlign: 'center'
+const navStyle = {
+    backgroundColor: 'skyblue',
+    height: '5.313rem',
+    fontSize: '1.3rem',
+    marginTop: '.5rem'
 }
-const subTitleStyle = {
-    fontFamily: 'Apple Chancery, cursive,  sans-serif',
-    color: 'rgb(222 195 70)'
-}
+
 
 class Header extends Component {
     render() {
         return (
-            <Jumbotron className= "alert-info container-fluid header">
-              <h1 style={titleStyle}>Boodschap App</h1>
-                <h4 style={subTitleStyle}>Nemilson Lopes</h4>
-            </Jumbotron>
+                <nav className="navbar  navbar-expand-lg  navbar-light" style={navStyle}>
+                    <a className="navbar-brand"  href="#">Educational Games - Flower Arrangers</a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse"
+                             data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav mr-auto">
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Link</a>
+                            </li>
+                            <li className="nav-item dropdown" value={this.props.genre}>
+                                <a  className="nav-link dropdown-toggle" href="#"  id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Filter Games
+                                </a>
+                                <div className="dropdown-menu" aria-labelledby="navbarDropdown" >
+                                    <a className="dropdown-item" href="#">All</a>
+                                    <a className="dropdown-item" href="#">New Games</a>
+                                    <a className="dropdown-item" href="#">Fun</a>
+                                    <a className="dropdown-item" href="#">Math</a>
+                                    <a className="dropdown-item" href="#">Science</a>
+                                </div>
+                            </li>
+                        </ul>
+                   </div>
+                </nav>
         );
     }
 }
