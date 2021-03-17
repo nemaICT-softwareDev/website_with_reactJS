@@ -37,36 +37,6 @@
   }
 }
 
-.show-nav {
-  /*height: 15.75rem;*/
-  height: auto;
-}
-
-.links {
-  height: 0;
-  overflow: hidden;
-  list-style-type: none;
-  font-weight: bold;
-
-}
-
-
-@media screen and (min-width: 768px) {
-  button {
-    display: none;
-  }
-
-  .links {
-    height: auto;
-    display: flex;
-
-  }
-
-  li {
-    padding: 0 15px;
-  }
-}
-
 
 .urlQuote, .urlLinks, .links{
   color: #fffefc;
@@ -95,10 +65,11 @@
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #070000;
+  background-color: #d0d0c3;
   z-index: 0;
   margin-bottom: 3em;
   color: #2b2b2b;
+  margin-top: 10rem;
 }
 
 a.links{

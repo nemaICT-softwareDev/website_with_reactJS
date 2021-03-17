@@ -8,12 +8,6 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer";
 import HLine from "./components/HLine";
 
-
-const picsStyle = {
-    paddingLeft: '0.625rem',
-    paddingRight: '0.625rem'
-}
-
 class App extends Component {
     componentDidMount() {
         /**
@@ -35,9 +29,6 @@ class App extends Component {
         <Provider store={store}>
             <div className="container">
                     <Header />
-
-                    <HLine />
-              <div style={picsStyle} className="row">
                   <div>
                         <Filter />
                         <HLine />
@@ -46,7 +37,6 @@ class App extends Component {
               </div>
                 <HLine />
                 <Footer />
-            </div>
         </Provider>
     );
   }

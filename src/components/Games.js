@@ -20,7 +20,7 @@ const imageStyle = {
 
 const thumbnailStyle = {
     backgroundColor: '#faf4d2',
-    boxShadow: '4px 4px 3px #666',
+    boxShadow: '2px 1px 1px #666',
     border: '1px solid #6c757d',
     borderRadius: '.75rem',
 
