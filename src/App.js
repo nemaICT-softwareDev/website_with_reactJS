@@ -29,6 +29,7 @@ class App extends Component {
         <Provider store={store}>
             <div className="container">
                     <Header />
+                     <HLine />
                   <div>
                         <Filter />
                         <HLine />
