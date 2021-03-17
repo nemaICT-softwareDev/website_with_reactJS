@@ -12,6 +12,7 @@
     color: #f6f6f6;
     font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
     font-style: italic;
+    font-size: 1.5rem;
 }
 
 .unOrderedList{
@@ -34,9 +35,6 @@ a:hover{
 }
 
 @media (max-width: 700px){
-    .quote{
-        font-size: 1.5rem;
-    }
     .links{
         font-size: 1.3rem;
     }

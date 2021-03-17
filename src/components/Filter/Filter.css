@@ -1,3 +1,7 @@
+.row {
+    margin: 0 0.9375rem 0 0.9375rem;
+}
+
 .description {
     color: white;
     font-size: 1em;
@@ -12,4 +16,5 @@
     font-size: 1.3rem;
     color: #1c87c9;
     background-color: #eee;
+
 }

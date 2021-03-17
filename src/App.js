@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Provider } from "react-redux";
-import Games from "./components/Games/Games";
+import Games from "./components/Games/Game";
 import Filter from "./components/Filter/Filter";
 import store from "./store";
 import "./App.css";
