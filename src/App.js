@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Provider } from "react-redux";
-import Games from "./components/Games";
-import Filter from "./components/Filter";
+import Games from "./components/Games/Games";
+import Filter from "./components/Filter/Filter";
 import store from "./store";
 import "./App.css";
 import Header from "./components/Header/Header";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import HLine from "./components/HLine";
 
 class App extends Component {

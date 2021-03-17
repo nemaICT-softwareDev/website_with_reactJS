@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {connect} from 'react-redux';
-import {fetchGames} from '../actions/gameActions';
+import {fetchGames} from '../../actions/gameActions';
 
 const gameStyle = {
     fontFamily: 'Apple Color Emoji", "Font Awesome\ 5 Free", "serif',

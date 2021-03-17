@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { filterGames } from "../actions/gameActions";
+import { filterGames } from "../../actions/gameActions";
 
 const selectElStyle = {
     border: '1px solid #6c757d',
