@@ -1,0 +1,29 @@
+.thumbnail{
+    background-color: #f6ecb3;
+    border: 1px solid #6c757d;
+    border-radius: .75rem;
+}
+
+.picTitle{
+    font-family: "Apple Color Emoji", "Font Awesome 5 Free", "serif";
+    padding-top: 5px;
+    padding-bottom: 2px;
+    position: relative;
+    margin-bottom: 2%;
+    text-align: center;
+    /*text-decoration-color: #000000 ;*/
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 100%;
+    /*height: 30px;*/
+}
+
+.imageStyle{
+    border-radius: .75rem;
+}
+
+@media (max-width: 700px){
+    .picTitle{
+        font-size: 75%;
+    }
+}
