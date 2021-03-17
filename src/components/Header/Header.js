@@ -44,8 +44,9 @@ export default function Header (){
                     >
                         <nav className="Nav">
                             <a href="/">Home</a>
-                            <a href="/">Articles</a>
+                            <a href="/">New Games</a>
                             <a href="/">About</a>
+                            <a href="/">Contact</a>
                             <button>Logout</button>
                         </nav>
                     </CSSTransition>

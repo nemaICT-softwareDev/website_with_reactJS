@@ -50,16 +50,16 @@
   font-style: italic;
   font-weight: bold;
 }
-.header{
-  margin-top: 3em;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-  /*z-index: 0;*/
-  /*opacity: 0.9;*/
-}
+/*.header{*/
+/*  margin-top: 3em;*/
+/*  background-position: center center;*/
+/*  background-repeat: no-repeat;*/
+/*  background-attachment: fixed;*/
+/*  background-size: cover;*/
+/*  background-color: #464646;*/
+/*  !*z-index: 0;*!*/
+/*  !*opacity: 0.9;*!*/
+/*}*/
 .footer{
   background-repeat: no-repeat;
   background-position: center center;
