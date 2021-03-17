@@ -1,0 +1,28 @@
+.footer{
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #d0d0c3;
+    z-index: 0;
+    margin-bottom: 3em;
+    color: #2b2b2b;
+    margin-top: 10rem;
+}
+
+.links {
+    color: #f6f6f6;
+    font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
+    font-style: italic;
+}
+
+.unOrderedList{
+    padding-left: 0;
+}
+.title {
+    color: white;
+    font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
+    font-size: 2.3rem;
+    font-style: italic;
+}
+a:hover{
+    color: #ec4c4c;
+}

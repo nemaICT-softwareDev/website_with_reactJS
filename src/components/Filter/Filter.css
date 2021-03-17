@@ -1,0 +1,19 @@
+.row{
+    margin-left: 5px;
+    padding-top: 0;
+}
+.description {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+.form-control {
+    border: 1px solid #6c757d;
+    border-radius: .50rem;
+    width: 14rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    color: #1c87c9;
+    background-color: #eee;
+}
