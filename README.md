@@ -1,4 +1,4 @@
-### This first assignment was to individually create a Virtual store application, called BoodschApp. Here I have used ReactJS, html5, CSS4 and Bootstrap.
+### First sprint delivery. a website with basic functionalities.
 
 #### !! Important, please install the json server first and run it to avoid image loading delay and browser inspector error messages !!
 

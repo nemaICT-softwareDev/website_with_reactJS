@@ -31,7 +31,6 @@ export default function Header (){
     };
 
         return (
-
                 <header className="Header">
                    <p>
                       <img src={require("./eduGamesLogo.png")} className="Logo" alt="logo" />&nbsp; Educational Games

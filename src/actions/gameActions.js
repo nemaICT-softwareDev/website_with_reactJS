@@ -3,7 +3,7 @@ import {
     FILTER_GAMES_BY_GENRE,
 } from "./types";
 
-// Get the list of pics from the json API and return it via the payload
+// Get the list of games from the json API and return it via the payload
 export const fetchGames = () => (dispatch) => {
     fetch("http://localhost:3000/games")
         .then((res) => res.json())
@@ -16,7 +16,7 @@ export const fetchGames = () => (dispatch) => {
             dispatch({ type: FETCH_GAMES, payload: data });
         });
 };
-// this function wilt filter the pics list by the type its product
+// this function wilt filter the games by its genre
 export const filterGames = (games, type) => (dispatch) => {
     return dispatch({
         type:FILTER_GAMES_BY_GENRE,
