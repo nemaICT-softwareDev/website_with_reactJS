@@ -32,7 +32,7 @@ export default function Header (){
 
         return (
                 <header className="Header">
-                        <img src={require('../logoDir/eduGamesLogo.png')} className="Logo" alt="Website logo" />
+                    <div className={"myLogo"}></div>
                     <CSSTransition
                         in={!isSmallScreen || isNavVisible}
                         timeout={350}

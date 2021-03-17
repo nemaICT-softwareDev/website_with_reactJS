@@ -11,7 +11,8 @@ const gameStyle = {
     textDecorationColor: '#000000',
     textAlign: 'center',
     fontWeight: 'bold',
-    textTransform: 'uppercase'
+    textTransform: 'uppercase',
+    fontSize: '75%'
 }
 
 const imageStyle = {
@@ -25,6 +26,10 @@ const thumbnailStyle = {
 
 }
 
+const picTitle ={
+    fontSize: '1rem'
+}
+
 class Games extends Component {
     componentDidMount() {
         this.props.fetchGames();
@@ -32,10 +37,10 @@ class Games extends Component {
     render() {
          //Here we use the map to convert the json pics files into JSX elements
         const games = this.props.games.map( (game) => (
-                <div className="col-4 col-sm-4 col-md-3  pics" key={game.id}>
+                <div className="col-6 col-xm-12 col-sm-3 col-md-3  pics" key={game.id}>
                      <div style={thumbnailStyle} className="thumbnail">
                                <a href={game.url}>
-                                 <div style={gameStyle}>{game.title}</div>
+                                   <div style={gameStyle}>{game.title}</div>
                                    <img style={imageStyle} src={`pics/${game.sku}.jpg`} alt={game.title} title={game.url}/>
                              </a><hr/>
                          </div>

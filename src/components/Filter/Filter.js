@@ -4,11 +4,17 @@ import { filterGames } from "../../actions/gameActions";
 
 const selectElStyle = {
     border: '1px solid #6c757d',
-    borderRadius: '.50rem'
+    borderRadius: '.50rem',
+    width: '14rem',
+    height: '4rem',
+    fontSize: '1.3rem',
+    color: '#1c87c9',
+    backgroundColor: '#eee'
 }
 const labelStyle = {
     color: '#f3f4f5',
-    fontSize: '1em'
+    fontSize: '1em',
+    textAlign: 'center'
 
 }
 

@@ -1,8 +1,9 @@
 .Header {
     position: sticky;
     top: 0; /* Stick it to the top */
-    max-height: 70px;
+    /*max-height: 12.5rem;*/
     width: 100%;
+    /*margin-bottom: 7.6rem;*/
 
     display: grid;
     grid-template-areas: "logo nav";
@@ -18,7 +19,7 @@
     grid-area: logo;
     width: auto;
     height: auto;
-}
+   }
 
 .Nav{
     grid-area: nav;
@@ -83,7 +84,7 @@
 @media (max-width: 700px) {
     .Header {
         grid-template-areas: "logo burger" "nav nav";
-        height: 50px;
+        height: auto;
         background-color: #2b3e50;
     }
     .Nav {
@@ -101,6 +102,14 @@
     .Burger {
         display: inline;
         height: 50px;
+        padding-top: 15px;
+    }
+    .myLogo{
+        /*background-image: url("../logoDir/eduGamesLogo2.png");*/
+        /*!*height: 1.25rem;*!*/
+        /*!*width: 1.25rem;*!*/
+        /*margin-left: fill;*/
+        position: sticky;
     }
 }
 
@@ -121,5 +130,11 @@
     opacity: 0;
     transform: scale(0.5);
     transition: opacity 350ms, transform 350ms;
+}
+.myLogo{
+    background-image: url("../logoDir/eduGamesLogo.png");
+    height: 200px;
+    width: 200px;
+    margin-left: fill;
 }
 
