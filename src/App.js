@@ -27,17 +27,17 @@ class App extends Component {
          * Normally, you can’t use a connected component unless it is nested inside of a <Provider>.
          */
         <Provider store={store}>
-            <div className="container">
-                    <Header />
-                     <HLine />
-                  <div>
-                        <Filter />
-                        <HLine />
-                        <Games />
-                  </div>
+          <div className="container">
+              <Header />
+              <div>
+                   <HLine />
+                   <Filter />
+                   <HLine />
+                   <Games />
+                  <HLine />
               </div>
-                <HLine />
-                <Footer />
+             <Footer />
+         </div>
         </Provider>
     );
   }
