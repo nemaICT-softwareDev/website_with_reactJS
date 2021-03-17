@@ -30,7 +30,7 @@
 }
 
 .Nav a {
-    color: #fff;
+    color: #ec4c4c;
     font-size: 20px;
     font-weight: 500;
     transition: 0.5s;
@@ -41,16 +41,17 @@
 .Nav a:hover {
     /*transform: scale(1.1);*/
     transform: skewY(13deg);
+    color: white;
 }
 
 .Nav button {
     padding: 10px;
     outline: none;
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
     font-weight: 600;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: #ef4646;
     /*box-shadow: 0px 5px 0px 0px rgba(255, 0, 0, 0.25);*/
     border-radius: 10px;
     cursor: pointer;
@@ -104,6 +105,9 @@
         height: 50px;
         padding-top: 15px;
     }
+    .Nav a:hover{
+        color: white;
+    }
     .myLogo{
         /*background-image: url("../logoDir/eduGamesLogo2.png");*/
         /*!*height: 1.25rem;*!*/
@@ -133,8 +137,8 @@
 }
 .myLogo{
     background-image: url("../logoDir/eduGamesLogo.png");
-    height: 200px;
-    width: 200px;
-    margin-left: fill;
+    height: 20rem;
+    width: 20rem;
+    /*margin-left: 20px;*/
 }
 

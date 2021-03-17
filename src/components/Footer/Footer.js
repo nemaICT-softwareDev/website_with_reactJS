@@ -1,5 +1,6 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import "./Footer.css"
 
 class Footer extends React.Component {
     render() {
@@ -21,15 +22,15 @@ class Footer extends React.Component {
                                 </MDBCol>
                                 <MDBCol md="6">
                                     <h5 className="title">Links</h5>
-                                    <ul>
+                                    <ul className={"unOrderedList"}>
                                         <li className="list-unstyled">
-                                            <a href="https://www.education.com/games/">Educational Games for Kids</a>
+                                            <a href="https://www.education.com/games/" className={"links"}>Educational Games for Kids</a>
                                         </li>
                                         <li className="list-unstyled">
-                                            <a href="https://www.ducksters.com/games/">Educational Games</a>
+                                            <a href="https://www.ducksters.com/games/" className={"links"}>Educational Games</a>
                                         </li>
                                         <li className="list-unstyled">
-                                            <a href="https://www.funbrain.com/">FunBrain</a>
+                                            <a href="https://www.funbrain.com/" className={"links"}>FunBrain</a>
                                         </li>
                                     </ul>
                                 </MDBCol>
@@ -42,9 +43,6 @@ class Footer extends React.Component {
                         </div>
                     </MDBFooter>
                 </div>
-
-
-
         );
     }
 }

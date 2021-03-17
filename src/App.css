@@ -50,35 +50,6 @@
   font-style: italic;
   font-weight: bold;
 }
-/*.header{*/
-/*  margin-top: 3em;*/
-/*  background-position: center center;*/
-/*  background-repeat: no-repeat;*/
-/*  background-attachment: fixed;*/
-/*  background-size: cover;*/
-/*  background-color: #464646;*/
-/*  !*z-index: 0;*!*/
-/*  !*opacity: 0.9;*!*/
-/*}*/
-.footer{
-
-
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #d0d0c3;
-  z-index: 0;
-  margin-bottom: 3em;
-  color: #2b2b2b;
-  margin-top: 10rem;
-}
-
-a.links{
-   color: #fcfcfc;
-}
-
-p.dateFooter{
-  color: white;
-}
 
 .row {
   margin: 25px;

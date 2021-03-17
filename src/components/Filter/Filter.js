@@ -1,34 +1,15 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { filterGames } from "../../actions/gameActions";
-
-const selectElStyle = {
-    border: '1px solid #6c757d',
-    borderRadius: '.50rem',
-    width: '14rem',
-    height: '4rem',
-    fontSize: '1.3rem',
-    color: '#1c87c9',
-    backgroundColor: '#eee'
-}
-const labelStyle = {
-    color: '#f3f4f5',
-    fontSize: '1em',
-    textAlign: 'center'
-
-}
-
-const rowStyle = {
-    marginLeft: '5px',
-}
+import './Filter.css'
 
 class Filter extends Component {
     render() {
         return (
-            <div style={rowStyle} className="row">
+            <div className="row">
                  <div>
-                    <label style={labelStyle}> Filter Games
-                        <select style={selectElStyle} className="form-control" value={this.props.genre}
+                    <label className={"description"}> Filter Games
+                        <select  className="form-control" value={this.props.genre}
                             onChange={(e) => {
                             this.props.filterGames(
                             this.props.games,
