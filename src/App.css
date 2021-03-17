@@ -38,18 +38,18 @@
 }
 
 
-.urlQuote, .urlLinks, .links{
-  color: #fffefc;
-  position: relative;
+/*.urlQuote, .urlLinks, .links{*/
+/*  color: #fffefc;*/
+/*  position: relative;*/
 
-}
+/*}*/
 
-.urlLinks, .urlQuote{
-  font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
-  font-size: 1.5em;
-  font-style: italic;
-  font-weight: bold;
-}
+/*.urlLinks, .urlQuote{*/
+/*  font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";*/
+/*  font-size: 1.5em;*/
+/*  font-style: italic;*/
+/*  font-weight: bold;*/
+/*}*/
 
 .row {
   margin: 25px;

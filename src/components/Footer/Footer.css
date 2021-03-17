@@ -17,6 +17,12 @@
 .unOrderedList{
     padding-left: 0;
 }
+
+.quote{
+    font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
+    font-size: 1.5rem;
+}
+
 .title {
     color: white;
     font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
@@ -25,4 +31,13 @@
 }
 a:hover{
     color: #ec4c4c;
+}
+
+@media (max-width: 700px){
+    .quote{
+        font-size: 1.5rem;
+    }
+    .links{
+        font-size: 1.3rem;
+    }
 }

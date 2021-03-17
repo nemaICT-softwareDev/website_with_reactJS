@@ -11,14 +11,14 @@ class Footer extends React.Component {
                             <MDBRow>
                                 <MDBCol md="6">
                                     <h5 className="title"> Time for fun</h5>
-                                    <p>
-                                        Educational games are games explicitly designed with educational purposes,
+                                    <blockquote className={"quote"}>
+                                        <cite>Educational games are games explicitly designed with educational purposes,
                                         or which have incidental or secondary educational value. All types of games
                                         may be used in an educational environment, however educational games are
                                         games that are designed to help people learn about certain subjects,
                                         expand concepts, reinforce development, understand a historical event or culture,
-                                        or assist them in learning a skill as they play
-                                    </p>
+                                            or assist them in learning a skill as they play.</cite>
+                                    </blockquote>
                                 </MDBCol>
                                 <MDBCol md="6">
                                     <h5 className="title">Links</h5>
