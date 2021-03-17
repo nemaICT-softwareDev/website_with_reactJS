@@ -16,7 +16,8 @@
 
 .Logo {
     grid-area: logo;
-    height: 70px;
+    width: auto;
+    height: auto;
 }
 
 .Nav{
@@ -33,10 +34,12 @@
     font-weight: 500;
     transition: 0.5s;
     text-decoration: none;
+
 }
 
 .Nav a:hover {
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
+    transform: skewY(13deg);
 }
 
 .Nav button {
@@ -93,7 +96,7 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        z-index: 3;
+        z-index: 5;
     }
     .Burger {
         display: inline;

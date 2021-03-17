@@ -32,9 +32,7 @@ export default function Header (){
 
         return (
                 <header className="Header">
-                   <p>
-                      <img src={require("../logoDir/eduGamesLogo.png")} className="Logo" alt="logo" />&nbsp; Educational Games
-                   </p>
+                        <img src={require('../logoDir/eduGamesLogo.png')} className="Logo" alt="Website logo" />
                     <CSSTransition
                         in={!isSmallScreen || isNavVisible}
                         timeout={350}
@@ -44,7 +42,7 @@ export default function Header (){
                         <nav className="Nav">
                             <a href="/">Home</a>
                             <a href="/">New Games</a>
-                            <a href="/">About</a>
+                            <a href="/">About Us</a>
                             <a href="/">Contact</a>
                             <button>Logout</button>
                         </nav>

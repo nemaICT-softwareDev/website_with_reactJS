@@ -7,7 +7,9 @@ const selectElStyle = {
     borderRadius: '.50rem'
 }
 const labelStyle = {
-    color: '#6c757d',
+    color: '#f3f4f5',
+    fontSize: '1em'
+
 }
 
 const rowStyle = {
