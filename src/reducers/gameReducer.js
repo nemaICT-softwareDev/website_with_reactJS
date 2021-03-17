@@ -13,7 +13,7 @@ export default function(state = initialState,action){
                     filteredItems: action.payload
             };
         case FILTER_GAMES_BY_GENRE:
-            // here we get the payload items and type coming from the productActions(filterProducts. Function)
+            // here we get the payload items and type coming from the gameActions(filterGames. Function)
             return {
                         ...state,
                         filteredItems: action.payload.items,

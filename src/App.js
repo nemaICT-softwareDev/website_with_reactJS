@@ -6,7 +6,7 @@ import store from "./store";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import HLine from "./components/HLine";
+import HLine from "./components/HLine/HLine";
 
 class App extends Component {
     componentDidMount() {
