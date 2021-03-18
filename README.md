@@ -1,4 +1,7 @@
-### First sprint delivery. a website with basic functionalities.
+### This is a school project
+### First sprint delivery a website with basic functionalities.
+#### links used for the games are pure added to as an example. 
+#### this project is basecally as a proof of concept for school.
 
 #### !! Important, please install the json server first and run it to avoid image loading delay and browser inspector error messages !!
 
