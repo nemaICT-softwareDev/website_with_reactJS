@@ -9,17 +9,16 @@
     grid-template-areas: "logo nav";
 
     /* Cosmetics */
-    background-color: #2b3e50;
+    background-color: #b2d7e3;
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
     z-index: 5;
-
 }
 
 .Logo {
     grid-area: logo;
     width: auto;
     height: auto;
-   }
+}
 
 .Nav{
     grid-area: nav;
@@ -35,12 +34,11 @@
     font-weight: 500;
     transition: 0.5s;
     text-decoration: none;
-
 }
 
 .Nav a:hover {
     /*transform: scale(1.1);*/
-    transform: skewY(13deg);
+    transform: skewY(14deg);
     color: white;
 }
 
@@ -60,9 +58,8 @@
 
 .Nav button:active {
     transform: translateY(3px);
-    box-shadow: 0px 2px 0px 0px rgba(255, 0, 0, 0.25);
+    box-shadow: 0 2px 0 0 rgba(255, 0, 0, 0.25);
 }
-
 
 .Burger {
     display: none;
@@ -75,7 +72,6 @@
     background: none;
     outline: none;
     transition: 0.1s;
-
 }
 
 .Burger:active {
@@ -86,7 +82,7 @@
     .Header {
         grid-template-areas: "logo burger" "nav nav";
         height: auto;
-        background-color: #2b3e50;
+        background-color: #b2d7e3;
     }
     .Nav {
         grid-template-rows: repeat(4, auto);
@@ -94,7 +90,7 @@
         grid-row-gap: 20px;
 
         padding: 30px 0 30px;
-        background: #cbb37e;
+        background: #f5ebb2;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -109,10 +105,6 @@
         color: white;
     }
     .myLogo{
-        /*background-image: url("../logoDir/eduGamesLogo2.png");*/
-        /*!*height: 1.25rem;*!*/
-        /*!*width: 1.25rem;*!*/
-        /*margin-left: fill;*/
         position: sticky;
     }
 }
@@ -127,14 +119,17 @@
     transform: translateX(0);
     transition: opacity 350ms, transform 350ms;
 }
+
 .NavAnimation-exit {
     opacity: 1;
 }
+
 .NavAnimation-exit-active {
     opacity: 0;
     transform: scale(0.5);
     transition: opacity 350ms, transform 350ms;
 }
+
 .myLogo{
     background-image: url("../logoDir/eduGamesLogo.png");
     height: 20rem;
