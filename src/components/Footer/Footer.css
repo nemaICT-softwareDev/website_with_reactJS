@@ -2,17 +2,17 @@
     background-attachment: fixed;
     background-size: cover;
     background-color: #d0d0c3;
-    z-index: 0;
+    /*z-index: 0;*/
     margin-bottom: 3em;
     color: #2b2b2b;
     margin-top: 10rem;
 }
 
 .links {
-    color: #f6f6f6;
-    font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
-    font-style: italic;
+    color: #1c224a;
+    font-family: "Andale Mono", "monospace", "serif";
     font-size: 1.5rem;
+    /*font-style: italic;*/
 }
 
 .unOrderedList{
@@ -20,22 +20,34 @@
 }
 
 .quote{
-    font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
+    font-family: "Andale Mono", "monospace", "serif";
     font-size: 1.5rem;
+    color: #1c224a;
 }
 
 .title {
-    color: white;
+    color: #ec4c4c;
     font-family: "Apple Color Emoji", "Font Awesome\ 5 Free", "serif";
     font-size: 2.3rem;
     font-style: italic;
+    font-weight: bold;
 }
 a:hover{
     color: #ec4c4c;
+    font-weight: bold;
 }
 
 @media (max-width: 700px){
     .links{
         font-size: 1.3rem;
     }
+}
+
+.footer-copyright{
+    color:#1c224a;
+}
+
+.webmaster{
+    color: #ec4c4c;
+    font-weight: bold;
 }
