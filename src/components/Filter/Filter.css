@@ -3,7 +3,7 @@
 }
 
 .description {
-    color: white;
+    color: #ec4c4c;
     font-size: 1em;
     text-align: center;
 }
@@ -17,4 +17,29 @@
     color: #1c87c9;
     background-color: #eee;
 
+}
+@media (max-width: 700px) {
+
+    .form-control {
+        border: 1px solid #6c757d;
+        border-radius: .50rem;
+        width: 10rem;
+        height: 3rem;
+        font-size: 1rem;
+        color: #1c87c9;
+        background-color: #eee;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .form-control {
+        border: 1px solid #6c757d;
+        border-radius: .50rem;
+        width: 10rem;
+        height: 3rem;
+        font-size: 1rem;
+        color: #1c87c9;
+        background-color: #eee;
+    }
 }
