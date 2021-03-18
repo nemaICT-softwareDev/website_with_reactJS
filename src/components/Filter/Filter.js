@@ -7,14 +7,14 @@ class Filter extends Component {
     render() {
         return (
             <div className="row">
-                 <div>
+                <div>
                     <label className={"description"}> Filter Games
                         <select  className="form-control" value={this.props.genre}
-                            onChange={(e) => {
-                            this.props.filterGames(
-                            this.props.games,
-                            e.target.value);
-                            }}>
+                                 onChange={(e) => {
+                                     this.props.filterGames(
+                                         this.props.games,
+                                         e.target.value);
+                                 }}>
                             <option value="">ALL</option>
                             <option value="n">New Games</option>
                             <option value="e">Engineering</option>
@@ -24,7 +24,7 @@ class Filter extends Component {
                         </select>
                     </label>
                 </div>
-              </div>
+            </div>
         );
     }
 }
