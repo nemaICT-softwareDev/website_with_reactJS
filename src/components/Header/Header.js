@@ -30,29 +30,29 @@ export default function Header (){
         setNavVisibility(!isNavVisible);
     };
 
-        return (
-                <header className="Header">
-                    <div className={"myLogo"}></div>
-                    <CSSTransition
-                        in={!isSmallScreen || isNavVisible}
-                        timeout={350}
-                        classNames="NavAnimation"
-                        unmountOnExit
-                    >
-                        <nav className="Nav">
-                            <a href="/">Home</a>
-                            <a href="/">New Games</a>
-                            <a href="/">About Us</a>
-                            <a href="/">Contact</a>
-                            <button>Logout</button>
-                        </nav>
-                    </CSSTransition>
-                    <button onClick={toggleNav} className="Burger">
-                        🍔
-                    </button>
-                </header>
+    return (
+        <header className="Header">
+            <div className={"myLogo"}></div>
+            <CSSTransition
+                in={!isSmallScreen || isNavVisible}
+                timeout={350}
+                classNames="NavAnimation"
+                unmountOnExit
+            >
+                <nav className="Nav">
+                    <a href="/">Home</a>
+                    <a href="/">New Games</a>
+                    <a href="/">About Us</a>
+                    <a href="/">Contact</a>
+                    <button>Logout</button>
+                </nav>
+            </CSSTransition>
+            <button onClick={toggleNav} className="Burger">
+                🍔
+            </button>
+        </header>
 
 
-        );
+    );
 
 }
